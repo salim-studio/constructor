@@ -91,7 +91,11 @@
   }
 
   window.addEventListener('load', function () {
-    navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' })
+    var swUrl = '/sw.js';
+    try {
+      if (location.pathname.indexOf('/constructor') === 0) swUrl = '/constructor/sw.js';
+    } catch (e) {}
+    navigator.serviceWorker.register(swUrl, { updateViaCache: 'none' })
       .then(function (reg) {
         // A worker already waiting from a previous visit.
         if (reg.waiting && navigator.serviceWorker.controller) promptUpdate(reg, reg.waiting);

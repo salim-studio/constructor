@@ -152,10 +152,14 @@ function copyDir(from, to) {
  *           before the app tag.
  */
 function classicBundle() {
+  let BASE = '/constructor/';
   return {
     name: 'classic-script-bundle',
     configResolved(config) {
       OUT_DIR = path.resolve(config.root, config.build.outDir);
+      if (config.base) {
+        BASE = config.base.endsWith('/') ? config.base : config.base + '/';
+      }
     },
     async buildStart() {
       // Build only: produce the concatenated bundles.
@@ -207,7 +211,7 @@ function classicBundle() {
       const appFile = find(/(^|\/)app-[^/]+\.js$/);
       return [vendorFile, appFile].map((fileName) => ({
         tag: 'script',
-        attrs: { src: `/${fileName}` },
+        attrs: { src: `${BASE}${String(fileName || '').replace(/^\/+/, '')}` },
         injectTo: 'head',
       }));
     },
