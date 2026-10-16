@@ -135,7 +135,7 @@ function renderSkeleton() {
             // Icon-only controls carry an accessible name (aria-label / title): a
             // screen reader otherwise announces the composer as an unlabelled
             // text field and the send/stop button as just "button".
-            h += `<textarea class="chat-input-message" data-gramm="false" placeholder="What can Puter build for you today?" aria-label="Message"></textarea>`;
+            h += `<textarea class="chat-input-message" data-gramm="false" placeholder="What can Constructor build for you today?" aria-label="Message"></textarea>`;
             h += `<div class="chat-input-message-actions">`;
                 h += `<button class="attachment-button" title="Attach files from your computer">${attachment_svg}</button>`;
                 h += `<input type="file" class="attachment-file-input" accept="${ATTACHMENT_ACCEPT}" multiple style="display:none">`;

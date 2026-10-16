@@ -3011,7 +3011,7 @@ function new_chat({ updateUrl = true } = {}) {
     // (The attachment tray was already emptied by resetChatUIForSwitch above,
     // which both this and loadChat run when the composer's chat context changes.)
 
-    $('.chat-input-message').attr('placeholder', 'What can Puter build for you today?');
+    $('.chat-input-message').attr('placeholder', 'What can Constructor build for you today?');
 
     // Reset chat box
     $('.chat-input-message').css('height', '40px');
