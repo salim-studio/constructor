@@ -915,6 +915,7 @@ ${lines.map((line, i) =>
 }
 
 export default defineConfig({
+  base: '/constructor/',
   root: 'src',
   publicDir: false,
   plugins: [classicBundle(), featuredFeedPlugin(), templatesPlugin(), pwaPlugin(), seoPagesPlugin()],

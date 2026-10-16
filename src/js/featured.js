@@ -32,7 +32,16 @@
 // visitors never see the hero re-center itself when the network copy lands;
 // the fresh copy re-renders only if its content actually differs.
 
-const FEATURED_FEED_URL = '/featured.json';
+// GitHub Pages project-site base (https://<org>.github.io/constructor/).
+// In Node tests `location` is undefined -> prefix is '' so tests keep passing.
+function __ghBase() {
+    try {
+        const p = (typeof location !== 'undefined' && location.pathname) || '';
+        return p.startsWith('/constructor') ? '/constructor' : '';
+    } catch (e) { return ''; }
+}
+
+const FEATURED_FEED_URL = (__ghBase() || '') + '/featured.json';
 const FEATURED_CACHE_KEY = 'featuredFeedCache';
 const FEATURED_MAX_ITEMS = 40; // sanity cap on the parsed feed; a daily batch is ~20
 const FEATURED_DISPLAY_COUNT = 12; // cards actually shown per page load
@@ -61,7 +70,17 @@ function sanitizeFeaturedItems(data) {
         // origin before insisting on http(s).
         const httpUrl = (v) => {
             try {
-                const u = new URL(String(v || ''), window.location.origin);
+                let s = String(v || '');
+                // Prefix root-relative first-party thumbs with the Pages base.
+                try {
+                    const base = __ghBase();
+                    if (base && s.startsWith('/') && !s.startsWith(base + '/')) {
+                        if (s.startsWith('/featured-thumbs/') || s.startsWith('/template-thumbs/') || s.startsWith('/template-files/') || s.startsWith('/fonts/') || s.startsWith('/favicons/') || s.startsWith('/icons/') || s.startsWith('/screenshots/')) {
+                            s = base + s;
+                        }
+                    }
+                } catch (e) { /* keep original */ }
+                const u = new URL(s, window.location.origin);
                 if (u.protocol === 'http:' || u.protocol === 'https:') return u.href;
             } catch (e) { /* fall through */ }
             return '';

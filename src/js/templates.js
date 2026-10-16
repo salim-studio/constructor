@@ -23,7 +23,23 @@
 (function () {
     'use strict';
 
-    const INDEX_URL = '/templates.json';
+    function __ghBase() {
+        try {
+            const p = (typeof location !== 'undefined' && location.pathname) || '';
+            return p.startsWith('/constructor') ? '/constructor' : '';
+        } catch (e) { return ''; }
+    }
+
+    function __withBase(u) {
+        try {
+            const s = String(u || '');
+            const base = __ghBase();
+            if (base && s.startsWith('/') && !s.startsWith(base + '/')) return base + s;
+            return s;
+        } catch (e) { return u; }
+    }
+
+    const INDEX_URL = (__ghBase() || '') + '/templates.json';
     const CACHE_KEY = 'templateIndexCache';
     const DISPLAY_COUNT = 6;
 
@@ -458,7 +474,7 @@
             $img.on('load', () => $img.addClass('loaded'));
             $img.on('error', () => { $img.remove(); $thumb.append(placeholder()); });
             if (!eager) $img.attr('loading', 'lazy');
-            $img.attr('src', template.thumbnail);
+            $img.attr('src', __withBase(template.thumbnail));
             $thumb.append($img);
         } else {
             $thumb.append(placeholder());
@@ -471,7 +487,7 @@
     // (see initTemplates).
     function buildCard(template) {
         const $card = $('<a class="feed-card template-card"></a>')
-            .attr('href', `/templates/${template.slug}/`)
+            .attr('href', __withBase(`/templates/${template.slug}/`))
             .attr('data-template', template.slug)
             .attr('aria-label', `${template.name} template${template.description ? ': ' + template.description : ''}`);
         $card.append(buildThumb(template));

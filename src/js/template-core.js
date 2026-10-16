@@ -121,8 +121,15 @@ window.TemplateCore = (function () {
 
     // Where the build serves a template file. Every segment was validated by
     // sanitizeIndex, so nothing here needs escaping.
+    // GitHub Pages base-aware: in Node tests `location` is undefined -> ''.
+    function __ghBase() {
+        try {
+            const p = (typeof location !== 'undefined' && location.pathname) || '';
+            return (p && p.startsWith('/constructor')) ? '/constructor' : '';
+        } catch (e) { return ''; }
+    }
     function fileUrl(template, path) {
-        return '/template-files/' + template.slug + '/' + template.version + '/' + path;
+        return (__ghBase() || '') + '/template-files/' + template.slug + '/' + template.version + '/' + path;
     }
 
     // The worker names a text file refers to through placeholders.
