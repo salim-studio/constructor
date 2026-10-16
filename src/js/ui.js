@@ -128,7 +128,8 @@ function renderSkeleton() {
         // hero centered in the first viewport while the community feed peeks
         // above the fold below it.
         h += `<div class="home-hero">`;
-        h += `<div class="chat-tagline"><a class="chat-tagline-logo" href="/"><img class="chat-tagline-icon" src="/favicons/app-icon.png" alt="Puter"></a><h1 class="chat-tagline-text">Build Apps and Websites With AI</h1></div>`;
+        var __base = (typeof location !== 'undefined' && location.pathname && location.pathname.indexOf('/constructor') === 0) ? '/constructor' : '';
+        h += `<div class="chat-tagline"><a class="chat-tagline-logo" href="${__base}/"><img class="chat-tagline-icon" src="${__base}/favicons/app-icon.png" alt="Puter"></a><h1 class="chat-tagline-text">Build Apps and Websites With AI</h1></div>`;
         h += `<div class="chat-tagline-sub">Describe your idea and Puter will build it for you, no code required!</div>`;
         h += `<div class="chat-input">`;
             // Icon-only controls carry an accessible name (aria-label / title): a
@@ -4889,11 +4890,12 @@ function openUpgradeModal(source, { justUpgraded = false } = {}) {
         '</ul>';
     const billing = htmlEscape(window.Branding.UPGRADE_URL);
     // A sketch of a published site, with and without the badge in its corner.
+    const __base2 = (typeof location !== 'undefined' && location.pathname && location.pathname.indexOf('/constructor') === 0) ? '/constructor' : '';
     const site = (badge) =>
         '<div class="upgrade-site">' +
             '<div class="upgrade-site-bar"><i></i><i></i><i></i></div>' +
             '<div class="upgrade-site-body"><b></b><span></span><span></span><span class="short"></span>' +
-                (badge ? '<div class="upgrade-site-badge"><img src="/favicons/app-icon.png" alt="">Made with Puter</div>' : '') +
+                (badge ? '<div class="upgrade-site-badge"><img src="' + __base2 + '/favicons/app-icon.png" alt="">Made with Puter</div>' : '') +
             '</div>' +
         '</div>';
 
