@@ -922,7 +922,7 @@ window.addEventListener('popstate', async () => {
 // arrived with. It used to reset to a hard-coded "Puter AI" — a name the
 // product no longer uses anywhere — so the tab changed brand the first time
 // the user opened and then left a project.
-const DEFAULT_PAGE_TITLE = (typeof document !== 'undefined' && document.title) || 'AI Builder by Puter';
+const DEFAULT_PAGE_TITLE = (typeof document !== 'undefined' && document.title) || 'Constructor';
 // A project title shows in the sidebar, the browser tab, and "… copy" labels, so
 // it's capped to a sensible single-line length. The auto-generated titles are
 // already shorter than this (first user message ≤ 50 + "…"; AI name ≤ 48 via

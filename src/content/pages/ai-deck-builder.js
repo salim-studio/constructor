@@ -25,7 +25,7 @@ export default {
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Present online, print to PDF, or download web files. No PowerPoint or Google Slides export.',
         screenshot: {
             src: '/screenshots/deck.webp',
-            alt: 'Build an online pitch deck with Puter AI Builder',
+            alt: 'Build an online pitch deck with Constructor',
         },
     },
 
@@ -41,7 +41,7 @@ export default {
                     icon: 'layout',
                     title: 'Writes and designs the slides',
                     body:
-                        'Describe the deck, the audience, and the point you need to land. Add your outline, brand colors, logo, and images. Puter AI Builder works out the slide order, writes the copy, and designs a consistent presentation around them.',
+                        'Describe the deck, the audience, and the point you need to land. Add your outline, brand colors, logo, and images. Constructor works out the slide order, writes the copy, and designs a consistent presentation around them.',
                 },
                 {
                     icon: 'eye',
@@ -117,7 +117,7 @@ export default {
             schema: {
                 name: 'How to build and share an online deck with AI',
                 description:
-                    'Create an online presentation from an outline with Puter AI Builder, refine the slides, and publish a link you can present from and update.',
+                    'Create an online presentation from an outline with Constructor, refine the slides, and publish a link you can present from and update.',
             },
             items: [
                 {
@@ -128,7 +128,7 @@ export default {
                 {
                     title: 'Watch it build',
                     body:
-                        'Puter AI Builder plans the slide order, writes the content, designs the slides, and shows the deck running in a live preview. A first version is usually ready in a couple of minutes.',
+                        'Constructor plans the slide order, writes the content, designs the slides, and shows the deck running in a live preview. A first version is usually ready in a couple of minutes.',
                 },
                 {
                     title: 'Make it yours',
@@ -220,7 +220,7 @@ export default {
                 {
                     q: 'What is an AI online deck builder?',
                     a: [
-                        'An AI online deck builder turns your outline or plain-language description into a presentation you can open in a browser. Describe the audience, the story, and the point you need to land, and Puter AI Builder plans the slide order, writes the copy, and designs the slides.',
+                        'An AI online deck builder turns your outline or plain-language description into a presentation you can open in a browser. Describe the audience, the story, and the point you need to land, and Constructor plans the slide order, writes the copy, and designs the slides.',
                         'Publish the deck to get a URL for presenting and sharing. Edit it in the builder and republish whenever it changes; the same link opens the updated presentation. You can also print to PDF or download the deck as web files.',
                         'You don\'t need to know how to code or design. You refine the deck the same way you started, by asking for changes or clicking the slide you want changed, then publish it in one click.',
                     ],
@@ -246,14 +246,14 @@ export default {
                 {
                     q: 'Can I export to PowerPoint, Keynote, or Google Slides?',
                     a: [
-                        'There is no PowerPoint, Keynote, or Google Slides export. Puter AI Builder creates an online presentation made of web files. Present from its URL, use your browser\'s Print option to save a PDF, or download a zip of the complete web project.',
+                        'There is no PowerPoint, Keynote, or Google Slides export. Constructor creates an online presentation made of web files. Present from its URL, use your browser\'s Print option to save a PDF, or download a zip of the complete web project.',
                         'Choose this workflow when you can present from a browser or share a link. If a client or conference requires an editable .pptx, .key, or Google Slides deck, you will need a tool that produces that format.',
                     ],
                 },
                 {
                     q: 'Can I update the online deck after sharing its link?',
                     a: [
-                        'Yes. Open the project in Puter AI Builder, describe your changes, and review them in the preview. Press Publish again to update the presentation at the same URL. Anyone opening that link gets the latest published version, so you do not need to send another address.',
+                        'Yes. Open the project in Constructor, describe your changes, and review them in the preview. Press Publish again to update the presentation at the same URL. Anyone opening that link gets the latest published version, so you do not need to send another address.',
                         'A PDF or downloaded zip is a snapshot of the deck when you saved it. Print or download it again if you need a file with the latest changes.',
                     ],
                 },
@@ -267,7 +267,7 @@ export default {
                 {
                     q: 'What slides should be in a pitch deck?',
                     a: [
-                        'The investor-standard order is problem, solution, product, market, business model, traction, competition, team, financials, and the ask, in ten to fourteen slides. Ask for a pitch deck and Puter AI Builder follows that structure by default, then reorders or drops slides when you tell it what your story actually needs.',
+                        'The investor-standard order is problem, solution, product, market, business model, traction, competition, team, financials, and the ask, in ten to fourteen slides. Ask for a pitch deck and Constructor follows that structure by default, then reorders or drops slides when you tell it what your story actually needs.',
                     ],
                 },
                 {
@@ -292,7 +292,7 @@ export default {
                 {
                     q: 'What happens when the AI gets a slide wrong?',
                     a: [
-                        'Runtime errors are caught before you see them: after each change Puter AI Builder reloads the deck, watches for anything that breaks, and sends it back to the AI to fix and re-verify.',
+                        'Runtime errors are caught before you see them: after each change Constructor reloads the deck, watches for anything that breaks, and sends it back to the AI to fix and re-verify.',
                         'For everything else, click the offending slide element and describe the fix in a sentence. If a change made the whole deck worse, version history restores the earlier one in a click.',
                     ],
                 },
@@ -325,7 +325,7 @@ export default {
                     q: 'When should I choose an online presentation?',
                     a: [
                         'An online deck fits meetings you present from your own browser, sales decks you send to prospects, teaching slides your class revisits, and updates that should stay available at one URL. It also gives your audience a place to try a calculator, chart, or demo inside the presentation.',
-                        'Puter AI Builder creates HTML, CSS, and JavaScript files you can download and host elsewhere. Use the published link for the current deck and browser PDF printing for a static copy. For a workflow that requires editing in PowerPoint, Keynote, or Google Slides, choose a tool with native slide-file export.',
+                        'Constructor creates HTML, CSS, and JavaScript files you can download and host elsewhere. Use the published link for the current deck and browser PDF printing for a static copy. For a workflow that requires editing in PowerPoint, Keynote, or Google Slides, choose a tool with native slide-file export.',
                     ],
                 },
             ],

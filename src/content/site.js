@@ -11,12 +11,12 @@
 
 // Canonical origin. Every canonical/OG/sitemap URL is built from this, so it is
 // the one place a domain change has to be made.
-export const ORIGIN = 'https://builder.puter.com';
+export const ORIGIN = 'https://salim-studio.github.io/constructor';
 
 // The product, named consistently across every page and every schema block.
-export const BRAND = 'AI Builder by Puter';
-export const BRAND_SHORT = 'AI Builder';
-export const PUBLISHER = 'Puter Technologies Inc.';
+export const BRAND = 'Constructor';
+export const BRAND_SHORT = 'Constructor';
+export const PUBLISHER = 'salim-slimani';
 
 // The hosting stack serves <path>/index.html for a directory URL and 301s the
 // slash-less form to it (verified against the live CloudFront/S3 origin). So the
@@ -62,7 +62,7 @@ export const LINKS = {
     peer: 'https://docs.puter.com/Peer/',
     userPays: 'https://docs.puter.com/user-pays-model/',
     // The builder and the underlying Puter platform have separate repositories.
-    builderGithub: 'https://github.com/HeyPuter/builder',
+    builderGithub: 'https://github.com/salim-studio/constructor',
     puterGithub: 'https://github.com/HeyPuter/puter',
     x: 'https://x.com/HeyPuter',
     discord: 'https://discord.com/invite/PQcx7Teh8u',
@@ -140,7 +140,7 @@ export const FOOTER_NAV = [
         heading: 'Community',
         links: [
             { label: 'X', href: LINKS.x },
-            { label: 'AI Builder on GitHub', href: LINKS.builderGithub },
+            { label: 'Constructor on GitHub', href: LINKS.builderGithub },
             { label: 'Puter on GitHub', href: LINKS.puterGithub },
         ],
     },
@@ -151,9 +151,9 @@ export const FOOTER_NAV = [
 export const ORGANIZATION = {
     '@type': 'Organization',
     '@id': `${ORIGIN}/#organization`,
-    name: 'Puter',
+    name: 'Constructor',
     legalName: PUBLISHER,
-    url: LINKS.puter,
+    url: `${ORIGIN}/`,
     logo: {
         '@type': 'ImageObject',
         url: `${ORIGIN}/favicons/icon-512.png`,
@@ -169,7 +169,7 @@ export const SOFTWARE_APPLICATION = {
     '@type': 'WebApplication',
     '@id': `${ORIGIN}/#software`,
     name: BRAND,
-    alternateName: ['Puter AI Builder', 'Puter Builder'],
+    alternateName: ['Constructor App Builder', 'Constructor Website Builder'],
     url: `${ORIGIN}/`,
     applicationCategory: 'DeveloperApplication',
     applicationSubCategory: 'AI app builder',

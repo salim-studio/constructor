@@ -17,13 +17,13 @@ export default {
         eyebrow: 'AI portfolio builder',
         h1: 'AI portfolio builder that turns your work into a live site',
         lead:
-            'Describe what you do, attach your work, and Puter AI Builder designs a portfolio website around it: galleries, case studies, an about page, and a contact form that reaches you. Published in minutes.',
+            'Describe what you do, attach your work, and Constructor designs a portfolio website around it: galleries, case studies, an about page, and a contact form that reaches you. Published in minutes.',
         cta: { label: 'Start building', href: '/' },
         secondary: { label: 'Built for photographers', href: '/for/photographers/' },
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, including on a phone.',
         screenshot: {
             src: '/screenshots/portfolio.webp',
-            alt: 'Build a florist portfolio site with Puter AI Builder',
+            alt: 'Build a florist portfolio site with Constructor',
         },
     },
 
@@ -39,7 +39,7 @@ export default {
                     icon: 'wand',
                     title: 'A design built around your work',
                     body:
-                        'There is no template underneath. Say what you make and the mood you want, from quiet and editorial to bold and dark, and Puter AI Builder lays out the galleries, case-study pages, about page, and navigation to suit it.',
+                        'There is no template underneath. Say what you make and the mood you want, from quiet and editorial to bold and dark, and Constructor lays out the galleries, case-study pages, about page, and navigation to suit it.',
                 },
                 {
                     icon: 'folder',
@@ -85,7 +85,7 @@ export default {
                     title: 'Your files are the brief',
                     art: 'files',
                     body: [
-                        'Drop in the project images, your logo, a PDF case study, and your resume. Puter AI Builder reads what it needs and writes the pages from it: project titles, descriptions, an about page in your voice, and the right skills in the right order.',
+                        'Drop in the project images, your logo, a PDF case study, and your resume. Constructor reads what it needs and writes the pages from it: project titles, descriptions, an about page in your voice, and the right skills in the right order.',
                         'It is a first draft of you rather than the final word, so read the copy before you share it. Changing a line is a sentence in the chat.',
                     ],
                 },
@@ -127,7 +127,7 @@ export default {
                 {
                     title: 'Watch the site take shape',
                     body:
-                        'Puter AI Builder designs the pages, places your work, writes the first-draft copy, and shows the site running in a live preview. A first version is usually ready in a couple of minutes.',
+                        'Constructor designs the pages, places your work, writes the first-draft copy, and shows the site running in a live preview. A first version is usually ready in a couple of minutes.',
                 },
                 {
                     title: 'Refine it by pointing and asking',
@@ -200,7 +200,7 @@ export default {
                     icon: 'star',
                     title: 'Strongest work first, and fewer pieces',
                     body:
-                        'Six to ten pieces you are proud of beat thirty you are not. Tell Puter AI Builder which projects are featured and it will give them the space on the home page, with the rest behind a filter or an archive page.',
+                        'Six to ten pieces you are proud of beat thirty you are not. Tell Constructor which projects are featured and it will give them the space on the home page, with the rest behind a filter or an archive page.',
                 },
                 {
                     icon: 'book',
@@ -232,13 +232,13 @@ export default {
                     q: 'What is an AI portfolio builder?',
                     a: [
                         'An AI portfolio builder takes your work, your resume, and a short description of what you do, and produces a finished portfolio website: the layout, the galleries, the case-study pages, the copy, and the contact form, without you picking a template or writing code.',
-                        'The difference from a template-based portfolio maker is where it starts. A template asks you to fit your work into someone else\'s layout. Puter AI Builder starts from your description and your files and designs around them, then lets you refine the result by asking for changes or clicking the part you want different. The output is a normal website you own.',
+                        'The difference from a template-based portfolio maker is where it starts. A template asks you to fit your work into someone else\'s layout. Constructor starts from your description and your files and designs around them, then lets you refine the result by asking for changes or clicking the part you want different. The output is a normal website you own.',
                     ],
                 },
                 {
                     q: 'How do I make a portfolio website with AI?',
                     a: [
-                        'Open Puter AI Builder, describe your discipline and the feel you want, and attach your work: images, a resume or CV, PDFs of past projects, or pasted descriptions. A first version appears in the live preview within a couple of minutes. Reorder projects, change the look, and fix the copy by asking in plain language or clicking the element in question, then press Publish to get a link. The steps above walk through each stage.',
+                        'Open Constructor, describe your discipline and the feel you want, and attach your work: images, a resume or CV, PDFs of past projects, or pasted descriptions. A first version appears in the live preview within a couple of minutes. Reorder projects, change the look, and fix the copy by asking in plain language or clicking the element in question, then press Publish to get a link. The steps above walk through each stage.',
                     ],
                 },
                 {
@@ -257,7 +257,7 @@ export default {
                     q: 'Can AI build my portfolio from my resume?',
                     a: [
                         'Yes. Attach your resume or CV as a PDF or text file and it becomes source material: the experience timeline, the skills list, and the about page are drafted from it, and you can ask for a resume download button on the site as well.',
-                        'Puter AI Builder does not pull from GitHub, Dribbble, or Behance automatically. Paste the links and descriptions you want included, or attach the images, and they are placed for you.',
+                        'Constructor does not pull from GitHub, Dribbble, or Behance automatically. Paste the links and descriptions you want included, or attach the images, and they are placed for you.',
                     ],
                 },
                 {

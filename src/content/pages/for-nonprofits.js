@@ -155,7 +155,7 @@ export default verticalPage({
         {
             q: 'What does it cost?',
             a: [
-                'Puter AI Builder is free to start. Every Puter account comes with a free allowance for building and publishing, and when it is used up you can upgrade the account to keep going. Volunteers and donors who sign in to something you build use their own Puter accounts, so their usage does not land on yours. A treasurer should also know that your address ends in puter.site unless you download the files and host them on your own domain.',
+                'Constructor is free to start. Every Puter account comes with a free allowance for building and publishing, and when it is used up you can upgrade the account to keep going. Volunteers and donors who sign in to something you build use their own Puter accounts, so their usage does not land on yours. A treasurer should also know that your address ends in puter.site unless you download the files and host them on your own domain.',
             ],
         },
         {

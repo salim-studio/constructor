@@ -84,9 +84,9 @@ export default {
     changefreq: 'weekly',
     navLabel: 'Use cases',
 
-    title: 'AI Builder Use Cases: Apps, Websites, Forms, and More | Puter',
+    title: 'Constructor Use Cases: Apps, Websites, Forms, and More',
     description:
-        'Use cases for Puter AI Builder: apps, websites, landing pages, forms, portfolios, SaaS, decks, games, and more. Describe what you need and get it built. Free to start.',
+        'Use cases for Constructor: apps, websites, landing pages, forms, portfolios, SaaS, decks, games, and more. Describe what you need and get it built. Free to start.',
     ogTagline: 'One builder, eleven jobs',
 
     hero: {

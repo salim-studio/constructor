@@ -15,14 +15,14 @@ export default {
 
     title: 'How to Accept Stripe Payments in an App Built With AI | Puter',
     description:
-        'Take card payments in an app made with Puter AI Builder. Create a Stripe account, copy your secret key, give it to the builder, and test with a test card.',
+        'Take card payments in an app made with Constructor. Create a Stripe account, copy your secret key, give it to the builder, and test with a test card.',
     ogTagline: 'Stripe account, one key, one sentence',
 
     hero: {
         eyebrow: 'Guide',
         h1: 'How to accept payments with Stripe',
         lead:
-            'In this guide you will add card payments to an app built with Puter AI Builder using Stripe. You need a Stripe account and its secret key. The builder writes the rest.',
+            'In this guide you will add card payments to an app built with Constructor using Stripe. You need a Stripe account and its secret key. The builder writes the rest.',
     },
 
     sections: [
@@ -33,7 +33,7 @@ export default {
             schema: {
                 name: 'How to accept Stripe payments in an app built with AI',
                 description:
-                    'Connect a Stripe account to an app made with Puter AI Builder and test the checkout with a test card.',
+                    'Connect a Stripe account to an app made with Constructor and test the checkout with a test card.',
                 totalTime: 'PT10M',
             },
             items: [

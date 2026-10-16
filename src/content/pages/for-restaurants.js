@@ -155,7 +155,7 @@ export default verticalPage({
         {
             q: 'What does the site cost per month?',
             a: [
-                'Puter AI Builder is free to start, with hosting on a puter.site address included. Every Puter account comes with a free allowance for building and publishing, and when it is used up you can upgrade your account to keep going.',
+                'Constructor is free to start, with hosting on a puter.site address included. Every Puter account comes with a free allowance for building and publishing, and when it is used up you can upgrade your account to keep going.',
             ],
         },
         {

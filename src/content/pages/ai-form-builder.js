@@ -17,13 +17,13 @@ export default {
         eyebrow: 'AI form builder',
         h1: 'AI form builder that collects real responses',
         lead:
-            'Build a form with AI without writing a line of code. Puter AI Builder turns your description into a working form, with submissions saved to your account and a private view to read them.',
+            'Build a form with AI without writing a line of code. Constructor turns your description into a working form, with submissions saved to your account and a private view to read them.',
         cta: { label: 'Start building', href: '/' },
         secondary: { label: 'How to write a build prompt', href: '/guides/how-to-write-a-build-prompt/' },
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, including on a phone.',
         screenshot: {
             src: '/screenshots/form.webp',
-            alt: 'Build a customer feedback form with Puter AI Builder',
+            alt: 'Build a customer feedback form with Constructor',
         },
     },
 
@@ -39,7 +39,7 @@ export default {
                     icon: 'wand',
                     title: 'Writes the form from a description',
                     body:
-                        'Say what the form is for and Puter AI Builder writes the fields, labels, validation, error messages, and thank-you state, with multi-step layouts and conditional questions when you ask for them.',
+                        'Say what the form is for and Constructor writes the fields, labels, validation, error messages, and thank-you state, with multi-step layouts and conditional questions when you ask for them.',
                 },
                 {
                     icon: 'database',
@@ -86,14 +86,14 @@ export default {
                     art: 'backend',
                     body: [
                         'Submissions are saved to storage you own on [Puter](' + LINKS.puter + '), and the builder makes a private admin view alongside the form where you can read, search, and export them as CSV.',
-                        'For a public form that anyone can fill in without signing in, Puter AI Builder can deploy a serverless worker from the same conversation to collect the responses, so shared collection works without a server of your own.',
+                        'For a public form that anyone can fill in without signing in, Constructor can deploy a serverless worker from the same conversation to collect the responses, so shared collection works without a server of your own.',
                     ],
                 },
                 {
                     title: 'Errors get fixed before you see them',
                     art: 'verify',
                     body: [
-                        'Every change is run and checked before it comes back to you. If validation breaks or a submit stops saving, Puter AI Builder fixes it and checks again.',
+                        'Every change is run and checked before it comes back to you. If validation breaks or a submit stops saving, Constructor fixes it and checks again.',
                         'You spend your time on what the form should ask, not on why the submit button stopped working.',
                     ],
                 },
@@ -127,7 +127,7 @@ export default {
                 {
                     title: 'Watch it build',
                     body:
-                        'Puter AI Builder writes the form, wires up saving to your account, runs it, and checks that a submission goes through. A first version is usually ready in a couple of minutes.',
+                        'Constructor writes the form, wires up saving to your account, runs it, and checks that a submission goes through. A first version is usually ready in a couple of minutes.',
                 },
                 {
                     title: 'Refine by talking, or by pointing',
@@ -147,7 +147,7 @@ export default {
             id: 'starters',
             heading: 'Not sure where to start? Try one of these',
             intro:
-                'Pick one and Puter AI Builder makes it for you. Then make it yours by describing what to change.',
+                'Pick one and Constructor makes it for you. Then make it yours by describing what to change.',
             items: [
                 {
                     title: 'Contact form',
@@ -220,14 +220,14 @@ export default {
                     q: 'What is an AI form builder?',
                     a: [
                         'An AI form builder turns a plain-language description into a working online form. You say what the form is for and what it needs to ask, and the AI writes the questions, the field types, the validation, and the design, then shows you the result so you can try it right away.',
-                        'You don\'t need to know how to code. With Puter AI Builder you refine the form the same way you started, by asking for changes or clicking the field you want changed, and the form saves its submissions to your account from the first version. Hosting and storage are included, so there is nothing to connect or maintain yourself.',
+                        'You don\'t need to know how to code. With Constructor you refine the form the same way you started, by asking for changes or clicking the field you want changed, and the form saves its submissions to your account from the first version. Hosting and storage are included, so there is nothing to connect or maintain yourself.',
                         'Compared with a traditional form service, the difference is what you end up with: a normal set of web files you own, rather than a form living inside someone else\'s dashboard on a plan that meters your responses.',
                     ],
                 },
                 {
                     q: 'How do I create a form with AI?',
                     a: [
-                        'Describe the form in a sentence or two, watch Puter AI Builder write and run it in the live preview, make it yours by asking for changes or pointing at the field that should be different, then press Publish to get a link. The four steps above walk through each one.',
+                        'Describe the form in a sentence or two, watch Constructor write and run it in the live preview, make it yours by asking for changes or pointing at the field that should be different, then press Publish to get a link. The four steps above walk through each one.',
                         'If you already have the questions, paste them into the chat, or attach the PDF or document they live in, and ask for them to be turned into a form.',
                     ],
                 },
@@ -241,14 +241,14 @@ export default {
                 {
                     q: 'Where do the submissions go, and how do I see responses?',
                     a: [
-                        'Submissions are saved to your [Puter](' + LINKS.puter + ') account, in storage you own. Alongside the form, Puter AI Builder builds a private admin view where you can read responses, search and filter them, and export them as CSV. Describe the view you want and it is built that way.',
+                        'Submissions are saved to your [Puter](' + LINKS.puter + ') account, in storage you own. Alongside the form, Constructor builds a private admin view where you can read responses, search and filter them, and export them as CSV. Describe the view you want and it is built that way.',
                         'For a public form that anyone can fill in without an account, the builder can deploy a serverless worker from the same conversation to collect the responses. There is no separate form-service dashboard to log into: the admin view is part of the project and lives at a private link.',
                     ],
                 },
                 {
-                    q: 'Is Puter AI Builder free to use?',
+                    q: 'Is Constructor free to use?',
                     a: [
-                        'It is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. Open Puter AI Builder, describe a form, and try it in the preview right away. Nothing is public until you decide to publish.',
+                        'It is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. Open Constructor, describe a form, and try it in the preview right away. Nothing is public until you decide to publish.',
                         'There is no per-form or per-response plan.',
                     ],
                 },
@@ -285,21 +285,21 @@ export default {
                 {
                     q: 'Can I accept payments in my form?',
                     a: [
-                        'Puter AI Builder does not process payments and has no native payment field. The usual approach is to collect the order or booking details in the form and then send people to a payment provider you already use, such as a checkout page or a payment link. The form handles everything around it: the questions, the confirmation, and the record of who asked for what.',
+                        'Constructor does not process payments and has no native payment field. The usual approach is to collect the order or booking details in the form and then send people to a payment provider you already use, such as a checkout page or a payment link. The form handles everything around it: the questions, the confirmation, and the record of who asked for what.',
                     ],
                 },
                 {
                     q: 'Are AI-generated forms accurate enough, and what happens when the AI gets it wrong?',
                     a: [
                         'The first version is a strong draft rather than a finished product, and the fastest way to treat it is as one. Read through the questions, fill the form in yourself in the preview, and check that a submission shows up in the admin view.',
-                        'Most runtime errors are caught before you see them: Puter AI Builder reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify. For everything else, tell it what is wrong in one sentence, or click the field and describe the fix. If a change made things worse overall, version history lets you restore an earlier snapshot and take a different run at it.',
+                        'Most runtime errors are caught before you see them: Constructor reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify. For everything else, tell it what is wrong in one sentence, or click the field and describe the fix. If a change made things worse overall, version history lets you restore an earlier snapshot and take a different run at it.',
                     ],
                 },
                 {
                     q: 'Is my data safe? Is it HIPAA compliant?',
                     a: [
                         'Published forms are served over HTTPS, and submissions are stored under your own [Puter](' + LINKS.puter + ') account rather than in a third-party form service. There is no server of your own to patch or keep updated.',
-                        'Puter AI Builder does not claim HIPAA compliance or any other regulatory certification, and code you did not write is still code you are responsible for. For health information, financial details, or other sensitive personal data, review what was built and treat the AI as a fast first draft rather than a compliance review.',
+                        'Constructor does not claim HIPAA compliance or any other regulatory certification, and code you did not write is still code you are responsible for. For health information, financial details, or other sensitive personal data, review what was built and treat the AI as a fast first draft rather than a compliance review.',
                     ],
                 },
                 {

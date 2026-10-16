@@ -17,13 +17,13 @@ export default {
         eyebrow: 'AI game builder',
         h1: 'AI game builder that hands you a playable game',
         lead:
-            'Make a game with AI without writing a line of code. Puter AI Builder turns your idea into a browser game you can play right away and share with a link.',
+            'Make a game with AI without writing a line of code. Constructor turns your idea into a browser game you can play right away and share with a link.',
         cta: { label: 'Start building', href: '/' },
         secondary: { label: 'See what to build', href: '/what-to-build/' },
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, including on a phone.',
         screenshot: {
             src: '/screenshots/game.webp',
-            alt: 'Build a cookie clicker game with Puter AI Builder',
+            alt: 'Build a cookie clicker game with Constructor',
         },
     },
 
@@ -39,7 +39,7 @@ export default {
                     icon: 'wand',
                     title: 'Writes the whole game',
                     body:
-                        'Describe the game and Puter AI Builder writes it: the mechanics, controls, scoring, a title screen, a game-over screen, and a restart. It runs in the live preview the moment it is written, so you play it instead of reading about it.',
+                        'Describe the game and Constructor writes it: the mechanics, controls, scoring, a title screen, a game-over screen, and a restart. It runs in the live preview the moment it is written, so you play it instead of reading about it.',
                 },
                 {
                     icon: 'shieldCheck',
@@ -85,7 +85,7 @@ export default {
                     title: 'Errors get fixed before you see them',
                     art: 'verify',
                     body: [
-                        'Every change is run and checked before it comes back to you. A collision that throws, a loop that stalls, a screen that never appears: Puter AI Builder sees the error, fixes it, and checks again.',
+                        'Every change is run and checked before it comes back to you. A collision that throws, a loop that stalls, a screen that never appears: Constructor sees the error, fixes it, and checks again.',
                         'You spend your time on whether the game is fun, not on why it stopped working.',
                     ],
                 },
@@ -127,7 +127,7 @@ export default {
                 {
                     title: 'Play it',
                     body:
-                        'Puter AI Builder writes the game, runs it, and checks that it works. A first playable version is usually ready in a couple of minutes, in the preview beside the chat.',
+                        'Constructor writes the game, runs it, and checks that it works. A first playable version is usually ready in a couple of minutes, in the preview beside the chat.',
                 },
                 {
                     title: 'Tune it by talking, or by pointing',
@@ -147,7 +147,7 @@ export default {
             id: 'starters',
             heading: 'Not sure where to start? Try one of these',
             intro:
-                'Pick one and Puter AI Builder makes it for you. Then make it yours by describing what to change.',
+                'Pick one and Constructor makes it for you. Then make it yours by describing what to change.',
             items: [
                 {
                     title: 'Endless runner',
@@ -194,7 +194,7 @@ export default {
             columns: 2,
             heading: 'More than a single-player toy',
             intro:
-                'Most AI game makers stop at a share link. Every game built with Puter AI Builder runs on [Puter](' + LINKS.puter + '), so the backend is already there and your game can grow the moment you want it to.',
+                'Most AI game makers stop at a share link. Every game built with Constructor runs on [Puter](' + LINKS.puter + '), so the backend is already there and your game can grow the moment you want it to.',
             items: [
                 {
                     icon: 'users',
@@ -221,7 +221,7 @@ export default {
                     a: [
                         'An AI game builder turns a plain-language description into a playable game. You say what the game is, how the player moves, how they score, and how they lose, and the AI writes the code, runs it, and shows it to you so you can play it right away.',
                         'You don\'t need to know how to code. Every step, from the first description to publishing, works in plain English, and you tune the game the same way, by asking for changes or clicking the part you want changed. Hosting, player accounts, and saved data are included, so there is nothing to set up or maintain.',
-                        'Games built with Puter AI Builder are browser games: standard HTML, CSS, and JavaScript that run on any phone or desktop from a link. That makes them easy to share and easy to take with you, and it also sets the boundary of what the tool is for. It is not a replacement for a 3D engine or a console pipeline.',
+                        'Games built with Constructor are browser games: standard HTML, CSS, and JavaScript that run on any phone or desktop from a link. That makes them easy to share and easy to take with you, and it also sets the boundary of what the tool is for. It is not a replacement for a 3D engine or a console pipeline.',
                     ],
                 },
                 {
@@ -241,13 +241,13 @@ export default {
                     q: 'Can AI really make a full game from a prompt?',
                     a: [
                         'It makes a complete, playable game from a prompt: mechanics, controls, scoring, screens, and a restart, usually in a couple of minutes. Whether that first version is fun is a different question, and it is the one you are there for. Treat the first build as a strong draft, then tune it: speed, difficulty, feel, and look, one change at a time.',
-                        'Puter AI Builder is made for that loop. Every change is run and checked before you see it, every version is saved so a bad idea costs nothing to undo, and you can point at the exact thing you want changed instead of describing it.',
+                        'Constructor is made for that loop. Every change is run and checked before you see it, every version is saved so a bad idea costs nothing to undo, and you can point at the exact thing you want changed instead of describing it.',
                     ],
                 },
                 {
                     q: 'Is it free to use?',
                     a: [
-                        'It is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. Open Puter AI Builder, describe a game, and play it in the preview right away. Nothing is public until you decide to publish.',
+                        'It is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. Open Constructor, describe a game, and play it in the preview right away. Nothing is public until you decide to publish.',
                     ],
                 },
                 {
@@ -259,7 +259,7 @@ export default {
                 {
                     q: 'Can I make money with my games?',
                     a: [
-                        'Yes. The game is yours, and there is no commission and no commercial-rights tier to unlock. Puter AI Builder does not process payments itself, so the usual approach is to link to a payment provider you already use, such as a checkout page or a payment link, and let the game handle everything around it: sign-in, unlocked content, and per-player data. Ads and sponsorships work the way they would on any web page you own.',
+                        'Yes. The game is yours, and there is no commission and no commercial-rights tier to unlock. Constructor does not process payments itself, so the usual approach is to link to a payment provider you already use, such as a checkout page or a payment link, and let the game handle everything around it: sign-in, unlocked content, and per-player data. Ads and sponsorships work the way they would on any web page you own.',
                     ],
                 },
                 {
@@ -272,7 +272,7 @@ export default {
                 {
                     q: 'Can it make 3D games, or Unity and Unreal projects?',
                     a: [
-                        'No. Puter AI Builder produces browser games built with standard web technology, which is a natural fit for 2D games and interface-driven games and a poor fit for a full 3D production. It does not produce Unity, Unreal, or Godot projects, console builds, or anything that needs a game engine\'s editor. If you are shipping to Steam or a console, a game engine with an AI assistant is the right tool, and this one is not.',
+                        'No. Constructor produces browser games built with standard web technology, which is a natural fit for 2D games and interface-driven games and a poor fit for a full 3D production. It does not produce Unity, Unreal, or Godot projects, console builds, or anything that needs a game engine\'s editor. If you are shipping to Steam or a console, a game engine with an AI assistant is the right tool, and this one is not.',
                     ],
                 },
                 {
@@ -299,13 +299,13 @@ export default {
                 {
                     q: 'Can I build from my phone?',
                     a: [
-                        'Yes. Puter AI Builder is fully usable on a phone, with the chat and the preview as two views you switch between, so you can build a game and play-test it on the same device. Long builds keep running while the screen is on, and a build interrupted by the browser suspending the tab picks back up when you return.',
+                        'Yes. Constructor is fully usable on a phone, with the chat and the preview as two views you switch between, so you can build a game and play-test it on the same device. Long builds keep running while the screen is on, and a build interrupted by the browser suspending the tab picks back up when you return.',
                     ],
                 },
                 {
                     q: 'What happens when the AI gets something wrong?',
                     a: [
-                        'Most runtime errors are caught before you see them: Puter AI Builder reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
+                        'Most runtime errors are caught before you see them: Constructor reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
                         'For everything else, tell it what is wrong in one sentence, or click the offending element in the preview and describe the fix. If a change made the game worse overall, version history lets you restore an earlier snapshot and take a different run at it.',
                     ],
                 },

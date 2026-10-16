@@ -17,13 +17,13 @@ export default {
         eyebrow: 'AI landing page builder',
         h1: 'AI landing page builder that gets your page live',
         lead:
-            'Build a landing page with AI without writing a line of code. Puter AI Builder turns your offer into a live page, complete with hosting and a signup form that saves leads.',
+            'Build a landing page with AI without writing a line of code. Constructor turns your offer into a live page, complete with hosting and a signup form that saves leads.',
         cta: { label: 'Start building', href: '/' },
         secondary: { label: 'How to write the prompt', href: '/guides/how-to-write-a-build-prompt/' },
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, including on a phone.',
         screenshot: {
             src: '/screenshots/landing.webp',
-            alt: 'Build an event landing page with Puter AI Builder',
+            alt: 'Build an event landing page with Constructor',
         },
     },
 
@@ -39,7 +39,7 @@ export default {
                     icon: 'layout',
                     title: 'Writes and designs the page for you',
                     body:
-                        'Describe what you are launching and who it is for, and Puter AI Builder designs the page: hero, headline, benefits, proof, FAQ, and call to action, written for your offer rather than adapted from a template.',
+                        'Describe what you are launching and who it is for, and Constructor designs the page: hero, headline, benefits, proof, FAQ, and call to action, written for your offer rather than adapted from a template.',
                 },
                 {
                     icon: 'mail',
@@ -85,7 +85,7 @@ export default {
                     title: 'Errors get fixed before you see them',
                     art: 'verify',
                     body: [
-                        'Every change is run and checked before it comes back to you. If the form stops submitting or a section throws an error, Puter AI Builder reads the file, fixes the cause, and checks again.',
+                        'Every change is run and checked before it comes back to you. If the form stops submitting or a section throws an error, Constructor reads the file, fixes the cause, and checks again.',
                         'You spend your time on the offer and the headline, not on why the button stopped working.',
                     ],
                 },
@@ -127,7 +127,7 @@ export default {
                 {
                     title: 'Watch it build',
                     body:
-                        'Puter AI Builder designs the page, writes the copy, wires the form, and shows it running in a live preview. A first version is usually ready in a couple of minutes.',
+                        'Constructor designs the page, writes the copy, wires the form, and shows it running in a live preview. A first version is usually ready in a couple of minutes.',
                 },
                 {
                     title: 'Make it convert',
@@ -146,7 +146,7 @@ export default {
             type: 'prompts',
             id: 'starters',
             heading: 'Try one of these',
-            intro: 'Pick one and Puter AI Builder makes it for you. Then make it yours by describing what to change.',
+            intro: 'Pick one and Constructor makes it for you. Then make it yours by describing what to change.',
             items: [
                 {
                     title: 'SaaS waitlist',
@@ -220,7 +220,7 @@ export default {
                     a: [
                         'An AI landing page builder turns a plain-language description of an offer into a complete landing page. You say what you are launching, who it is for, and what you want a visitor to do, and the AI writes the headline and copy, designs the layout, adds the form, and shows the page running in minutes rather than days.',
                         'Unlike a template builder, it does not start from someone else\'s layout and ask you to bend it. The page is designed around your description, works on phones from the start, and comes with the basics a search engine needs already in place.',
-                        'With Puter AI Builder you refine it the same way you started, by asking for changes or clicking the part you want changed, then publish it in one click. The one thing worth doing yourself is reading the copy, since the AI writes a first draft of your offer rather than the final word.',
+                        'With Constructor you refine it the same way you started, by asking for changes or clicking the part you want changed, then publish it in one click. The one thing worth doing yourself is reading the copy, since the AI writes a first draft of your offer rather than the final word.',
                     ],
                 },
                 {
@@ -238,7 +238,7 @@ export default {
                 {
                     q: 'What does it cost to create and publish a landing page?',
                     a: [
-                        'Puter AI Builder is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. The page goes live at its own link the moment you press Publish.',
+                        'Constructor is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. The page goes live at its own link the moment you press Publish.',
                     ],
                 },
                 {
@@ -264,7 +264,7 @@ export default {
                     q: 'Where do form submissions and leads go?',
                     a: [
                         'Forms save what people send, so the leads are yours to read. Ask for signups to be stored in your Puter account and for a simple view where you can see them, or a CSV export you can drop into whatever you use for email.',
-                        'Puter AI Builder does not send email sequences or run a CRM. If you need automated follow-up, export your leads to the email tool you already use.',
+                        'Constructor does not send email sequences or run a CRM. If you need automated follow-up, export your leads to the email tool you already use.',
                     ],
                 },
                 {
@@ -283,7 +283,7 @@ export default {
                 {
                     q: 'Can I connect it to my marketing tools?',
                     a: [
-                        'There is no integrations directory. The page is standard web files, so anything you could add to a hand-written HTML page, such as an embed code, a tracking pixel, or a link to a checkout or booking page, you can ask for here. Puter AI Builder does not process payments itself, so for paid offers link to a payment provider you already use.',
+                        'There is no integrations directory. The page is standard web files, so anything you could add to a hand-written HTML page, such as an embed code, a tracking pixel, or a link to a checkout or booking page, you can ask for here. Constructor does not process payments itself, so for paid offers link to a payment provider you already use.',
                     ],
                 },
                 {
@@ -295,7 +295,7 @@ export default {
                 {
                     q: 'What happens when the AI gets something wrong?',
                     a: [
-                        'Most runtime errors are caught before you see them: Puter AI Builder reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
+                        'Most runtime errors are caught before you see them: Constructor reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
                         'For everything else, tell it what is wrong in one sentence, or click the offending element in the preview and describe the fix. If a change made the page worse overall, version history lets you restore an earlier snapshot and take a different run at it.',
                     ],
                 },

@@ -191,7 +191,7 @@ export default {
                 {
                     q: 'What does it actually cost?',
                     a: [
-                        'Puter AI Builder is free to start. Every Puter account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. People who sign in to the tools you build cover their own AI and storage usage through their own Puter account, so your costs do not grow with your client list.',
+                        'Constructor is free to start. Every Puter account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. People who sign in to the tools you build cover their own AI and storage usage through their own Puter account, so your costs do not grow with your client list.',
                     ],
                 },
                 {

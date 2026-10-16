@@ -40,19 +40,19 @@ export default {
         {
             type: 'review',
             id: 'puter',
-            heading: 'Puter AI Builder',
+            heading: 'Constructor',
             bestFor: 'A custom website you can describe, edit directly in a live preview, and publish with hosting included.',
             screenshot: {
                 src: SHOTS + 'puter.webp',
-                alt: 'Puter AI Builder homepage with its website creation prompt',
+                alt: 'Constructor homepage with its website creation prompt',
                 width: 1440,
                 height: 900,
             },
             body: [
-                'Describe the site and Puter AI Builder creates its pages, layout, and copy in a live browser preview. You can keep refining it through chat or click an element and say exactly what should change. Earlier versions remain available if an edit goes in the wrong direction. Publishing gives the site a public address with hosting included.',
+                'Describe the site and Constructor creates its pages, layout, and copy in a live browser preview. You can keep refining it through chat or click an element and say exactly what should change. Earlier versions remain available if an edit goes in the wrong direction. Publishing gives the site a public address with hosting included.',
                 'Puter can also give a site working forms, sign-in, storage, and AI features through its built-in backend. You can download the project as ordinary web files, keep editing them in a code editor, or host them elsewhere. See the [website builder overview](/ai-website-builder/) for details.',
             ],
-            link: { label: 'Try Puter AI Builder', href: '/' },
+            link: { label: 'Try Constructor', href: '/' },
         },
 
         {
@@ -235,7 +235,7 @@ export default {
                 'We compared popular AI website builders and checked each product\'s current offering on its own site. We focused on how a site gets created, what you can change afterward, and the tools available for publishing and maintaining it.',
             ],
             after: [
-                '[Puter](' + LINKS.puter + ') makes Puter AI Builder and publishes this guide. For more about the product, see the [Puter AI website builder](/ai-website-builder/) and [Puter.js documentation](' + LINKS.docs + ').',
+                '[Puter](' + LINKS.puter + ') makes Constructor and publishes this guide. For more about the product, see the [Puter AI website builder](/ai-website-builder/) and [Puter.js documentation](' + LINKS.docs + ').',
             ],
         },
     ],

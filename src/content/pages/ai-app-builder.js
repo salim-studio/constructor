@@ -16,7 +16,7 @@ export default {
         eyebrow: 'AI app builder',
         h1: 'AI app builder that hands you a working app',
         lead:
-            'Build apps with AI without writing a line of code. Puter AI Builder turns your idea into a working app, complete with a backend.',
+            'Build apps with AI without writing a line of code. Constructor turns your idea into a working app, complete with a backend.',
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, including on a phone. Not sure where to start? [See what to build](/what-to-build/).',
         composer: {
             submit: 'Start building',
@@ -41,7 +41,7 @@ export default {
                     icon: 'layout',
                     title: 'Designs the UI for you',
                     body:
-                        'Describe the app and Puter AI Builder designs the interface: layout, navigation, forms, empty states, all of it responsive on a phone.',
+                        'Describe the app and Constructor designs the interface: layout, navigation, forms, empty states, all of it responsive on a phone.',
                 },
                 {
                     icon: 'database',
@@ -87,7 +87,7 @@ export default {
                     title: 'Errors get fixed before you see them',
                     art: 'verify',
                     body: [
-                        'Every change is run and checked before it comes back to you. If something breaks, Puter AI Builder fixes it and checks again.',
+                        'Every change is run and checked before it comes back to you. If something breaks, Constructor fixes it and checks again.',
                         'You spend your time on what the app should do, not on why it stopped working.',
                     ],
                 },
@@ -128,7 +128,7 @@ export default {
                 {
                     title: 'Watch it build',
                     body:
-                        'Puter AI Builder writes the app, runs it, and checks that it works. A first version is usually ready in a couple of minutes.',
+                        'Constructor writes the app, runs it, and checks that it works. A first version is usually ready in a couple of minutes.',
                 },
                 {
                     title: 'Change it by talking, or by pointing',
@@ -148,7 +148,7 @@ export default {
             id: 'starters',
             heading: 'Not sure where to start? Try one of these',
             intro:
-                'Pick one and Puter AI Builder makes it for you. Then make it yours by describing what to change.',
+                'Pick one and Constructor makes it for you. Then make it yours by describing what to change.',
             items: [
                 {
                     title: 'Habit tracker',
@@ -206,14 +206,14 @@ export default {
                     q: 'How is this different from a no-code app builder?',
                     a: [
                         'A no-code app builder gives you a visual canvas and a fixed set of components. You assemble the app by hand, which gives you fine control but takes hours or days, means learning the platform, and leaves the finished app living inside the vendor\'s system, usually with no way to export it.',
-                        'An AI app builder starts from a description and generates the whole app in minutes: interface, data, and logic. With Puter AI Builder you refine it by asking for changes or clicking the element you want changed, so you keep the precision of a visual editor without the setup. The result is real source code you own and can export, and the app can do anything a web page can do, so you are not limited to the components a vendor anticipated.',
+                        'An AI app builder starts from a description and generates the whole app in minutes: interface, data, and logic. With Constructor you refine it by asking for changes or clicking the element you want changed, so you keep the precision of a visual editor without the setup. The result is real source code you own and can export, and the app can do anything a web page can do, so you are not limited to the components a vendor anticipated.',
                         'The trade-off is that code you did not write is still code you are responsible for. For anything handling money, health information, or other people\'s personal data, read what was built and treat the AI as a fast first draft rather than a security review. For a feature-by-feature comparison of what to look for in a builder, see [the main features of an AI app builder](/guides/main-features-of-an-ai-app-builder/).',
                     ],
                 },
                 {
-                    q: 'What kinds of apps can I build with Puter AI Builder?',
+                    q: 'What kinds of apps can I build with Constructor?',
                     a: [
-                        'Puter AI Builder is strongest at the software people actually need and rarely get: internal tools, trackers and dashboards, client portals, calculators, planners, study tools, small games, and data-entry apps that would otherwise be a spreadsheet nobody enjoys using.',
+                        'Constructor is strongest at the software people actually need and rarely get: internal tools, trackers and dashboards, client portals, calculators, planners, study tools, small games, and data-entry apps that would otherwise be a spreadsheet nobody enjoys using.',
                         'Because the generated app can use Puter\'s storage, accounts, AI models, workers, and peer-to-peer connections, it also handles things that normally require a backend, including multi-user apps, AI-powered features, and real-time collaboration.',
                     ],
                 },
@@ -224,16 +224,16 @@ export default {
                     ],
                 },
                 {
-                    q: 'Is Puter AI Builder free?',
+                    q: 'Is Constructor free?',
                     a: [
-                        'Puter AI Builder is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going.',
-                        'Open Puter AI Builder, describe an app, and use it in the preview right away. Nothing is public until you decide to publish.',
+                        'Constructor is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going.',
+                        'Open Constructor, describe an app, and use it in the preview right away. Nothing is public until you decide to publish.',
                     ],
                 },
                 {
-                    q: 'Can I use Puter AI Builder for a real business?',
+                    q: 'Can I use Constructor for a real business?',
                     a: [
-                        'Yes. Apps built with Puter AI Builder run with accounts, storage, and hosting included, and people use them for client portals, internal tools, booking, and tracking. For anything that handles money or sensitive personal data, review what was built before you rely on it.',
+                        'Yes. Apps built with Constructor run with accounts, storage, and hosting included, and people use them for client portals, internal tools, booking, and tracking. For anything that handles money or sensitive personal data, review what was built before you rely on it.',
                     ],
                 },
                 {
@@ -252,7 +252,7 @@ export default {
                 {
                     q: 'What happens when the AI gets something wrong?',
                     a: [
-                        'Most runtime errors are caught before you see them: Puter AI Builder reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
+                        'Most runtime errors are caught before you see them: Constructor reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
                         'For everything else, tell it what is wrong in one sentence, or click the offending element in the preview and describe the fix. If a change made things worse overall, version history lets you restore an earlier snapshot and take a different run at it.',
                     ],
                 },
@@ -261,13 +261,13 @@ export default {
                     a: [
                         'Every app comes with user accounts, a database, file storage, and AI models built in, with nothing to set up. Each person\'s data is stored under their own [Puter](' + LINKS.puter + ') account.',
                         'The app you build can use chat, vision, and image generation models directly, with no API keys to manage.',
-                        'When something needs to run outside the browser, like shared state, a webhook, or a public API, Puter AI Builder can deploy a serverless worker from the same conversation. Real-time features such as video chat, screen sharing, and multiplayer use Puter\'s peer-to-peer API.',
+                        'When something needs to run outside the browser, like shared state, a webhook, or a public API, Constructor can deploy a serverless worker from the same conversation. Real-time features such as video chat, screen sharing, and multiplayer use Puter\'s peer-to-peer API.',
                     ],
                 },
                 {
                     q: 'Can I accept payments or monetize it?',
                     a: [
-                        'Puter AI Builder does not process payments itself. The usual approach is to link to a payment provider you already use, such as a checkout page or a payment link, and let your app handle everything around it: sign-in, per-user data, and the features people are paying for.',
+                        'Constructor does not process payments itself. The usual approach is to link to a payment provider you already use, such as a checkout page or a payment link, and let your app handle everything around it: sign-in, per-user data, and the features people are paying for.',
                     ],
                 },
                 {
@@ -285,13 +285,13 @@ export default {
                 {
                     q: 'Can I publish it to the App Store or Google Play?',
                     a: [
-                        'Apps built with Puter AI Builder are web based and mobile responsive. They work on any phone from a link the moment you publish and can be added to the home screen like any other app, so you don\'t need an app store. There is no review to wait for, no fees, and updates go live for everyone instantly.',
+                        'Apps built with Constructor are web based and mobile responsive. They work on any phone from a link the moment you publish and can be added to the home screen like any other app, so you don\'t need an app store. There is no review to wait for, no fees, and updates go live for everyone instantly.',
                     ],
                 },
                 {
                     q: 'Can I build from my phone?',
                     a: [
-                        'Yes. Puter AI Builder is fully usable on a phone, with the chat and the preview as two views you switch between. Long builds keep running while the screen is on, and a build interrupted by the browser suspending the tab picks back up when you return.',
+                        'Yes. Constructor is fully usable on a phone, with the chat and the preview as two views you switch between. Long builds keep running while the screen is on, and a build interrupted by the browser suspending the tab picks back up when you return.',
                     ],
                 },
                 {

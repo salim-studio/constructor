@@ -40,19 +40,19 @@ export default {
         {
             type: 'review',
             id: 'puter',
-            heading: 'Puter AI Builder',
+            heading: 'Constructor',
             bestFor: 'Building and publishing a web app with a backend already available.',
             screenshot: {
                 src: SHOTS + 'puter.webp',
-                alt: 'Puter AI Builder homepage with its app creation prompt',
+                alt: 'Constructor homepage with its app creation prompt',
                 width: 1440,
                 height: 900,
             },
             body: [
-                'Describe the app you want and Puter AI Builder creates a working web app in the browser. You can use a live preview, point at an element to request a precise change, and return to an earlier version if an edit goes the wrong way. After each change, the builder loads the app and checks for runtime errors before handing it back.',
+                'Describe the app you want and Constructor creates a working web app in the browser. You can use a live preview, point at an element to request a precise change, and return to an earlier version if an edit goes the wrong way. After each change, the builder loads the app and checks for runtime errors before handing it back.',
                 'Apps can use Puter accounts, storage, AI models, and serverless workers without setting up a separate backend. Publishing puts the app on a public address, and you can download the project as ordinary web files to keep editing or host elsewhere. See the [full feature list](/features/) for what is available today.',
             ],
-            link: { label: 'Try Puter AI Builder', href: '/' },
+            link: { label: 'Try Constructor', href: '/' },
         },
 
         {
@@ -199,7 +199,7 @@ export default {
                 'We compared popular AI app builders and checked each product\'s current offering on its own site. We focused on the apps each can build, how you refine a first version, and what publishing or handing off the project involves.',
             ],
             after: [
-                '[Puter](' + LINKS.puter + ') makes Puter AI Builder and publishes this guide. For more about the product, see the [feature list](/features/) or the [Puter.js documentation](' + LINKS.docs + ').',
+                '[Puter](' + LINKS.puter + ') makes Constructor and publishes this guide. For more about the product, see the [feature list](/features/) or the [Puter.js documentation](' + LINKS.docs + ').',
             ],
         },
     ],

@@ -70,7 +70,7 @@
       return;
     }
     if (updateToast && typeof updateToast.dismiss === 'function') updateToast.dismiss();
-    updateToast = window.showToast('A new version of AI Builder is available.', {
+    updateToast = window.showToast('A new version of Constructor is available.', {
       type: 'info',
       key: 'pwa-update',
       duration: 0, // sticky until the user chooses
@@ -159,7 +159,7 @@
 
   function offerInstall() {
     if (!deferredPrompt || isStandalone() || snoozed() || !window.showToast) return;
-    window.showToast('Install AI Builder for a faster, app-like experience.', {
+    window.showToast('Install Constructor for a faster, app-like experience.', {
       type: 'info',
       key: 'pwa-install',
       duration: 0,

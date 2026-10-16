@@ -9,14 +9,14 @@ export default {
 
     title: 'AI Website Builder - Build a website with AI, free to start',
     description:
-        'Build a website with AI, no coding required. Turn your idea into a live website with Puter AI Builder. Free to start, hosting included.',
+        'Build a website with AI, no coding required. Turn your idea into a live website with Constructor. Free to start, hosting included.',
     ogTagline: 'Describe the site. Publish the site.',
 
     hero: {
         eyebrow: 'AI website builder',
         h1: 'AI website builder that gives you a live website',
         lead:
-            'Build a website with AI without writing a line of code. Puter AI Builder turns your idea into a live website, with hosting included.',
+            'Build a website with AI without writing a line of code. Constructor turns your idea into a live website, with hosting included.',
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, including on a phone. New to this? [Read the walkthrough](/guides/how-to-build-a-website-with-ai/).',
         composer: {
             submit: 'Start building',
@@ -41,7 +41,7 @@ export default {
                     icon: 'layout',
                     title: 'Designs the website for you',
                     body:
-                        'Describe what the site is for and Puter AI Builder designs it: pages, layout, navigation, and copy, written for you rather than adapted from a template.',
+                        'Describe what the site is for and Constructor designs it: pages, layout, navigation, and copy, written for you rather than adapted from a template.',
                 },
                 {
                     icon: 'phone',
@@ -95,7 +95,7 @@ export default {
                 {
                     title: 'Watch it build',
                     body:
-                        'Puter AI Builder designs the pages, writes the copy, and shows the site running in a live preview. A first version is usually ready in a couple of minutes.',
+                        'Constructor designs the pages, writes the copy, and shows the site running in a live preview. A first version is usually ready in a couple of minutes.',
                 },
                 {
                     title: 'Make it yours',
@@ -114,7 +114,7 @@ export default {
             type: 'prompts',
             id: 'starters',
             heading: 'Try one of these',
-            intro: 'Pick one and Puter AI Builder makes it for you. Then make it yours by describing what to change.',
+            intro: 'Pick one and Constructor makes it for you. Then make it yours by describing what to change.',
             items: [
                 {
                     title: 'Portfolio',
@@ -161,7 +161,7 @@ export default {
             columns: 2,
             heading: 'A website that can do things',
             intro:
-                'Most website builders stop at pages. Every site built with Puter AI Builder runs on [Puter](' + LINKS.puter + '), so the backend is already there and your site can grow the moment you need it to.',
+                'Most website builders stop at pages. Every site built with Constructor runs on [Puter](' + LINKS.puter + '), so the backend is already there and your site can grow the moment you need it to.',
             items: [
                 {
                     icon: 'database',
@@ -201,7 +201,7 @@ export default {
                 {
                     q: 'How do I generate a website with AI?',
                     a: [
-                        'Describe the site in a sentence or two, watch Puter AI Builder design and build it in the live preview, make it yours by asking for changes or pointing at what should be different, then press Publish. The four steps above walk through each one, and [how an AI website builder works](/guides/how-does-an-ai-website-builder-work/) explains what the AI is doing inside each step.',
+                        'Describe the site in a sentence or two, watch Constructor design and build it in the live preview, make it yours by asking for changes or pointing at what should be different, then press Publish. The four steps above walk through each one, and [how an AI website builder works](/guides/how-does-an-ai-website-builder-work/) explains what the AI is doing inside each step.',
                     ],
                 },
                 {
@@ -211,9 +211,9 @@ export default {
                     ],
                 },
                 {
-                    q: 'Is Puter AI Builder free?',
+                    q: 'Is Constructor free?',
                     a: [
-                        'Puter AI Builder is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. Open Puter AI Builder, describe a site, and see it running right away.',
+                        'Constructor is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. Open Constructor, describe a site, and see it running right away.',
                     ],
                 },
                 {
@@ -244,7 +244,7 @@ export default {
                 {
                     q: 'Can I add my own images, logo, and copy?',
                     a: [
-                        'Yes. Attach images, a logo, PDFs, or a text file with your copy in the chat and they are saved into the project for Puter AI Builder to use. You can also paste your text directly into the conversation and ask for it to be placed.',
+                        'Yes. Attach images, a logo, PDFs, or a text file with your copy in the chat and they are saved into the project for Constructor to use. You can also paste your text directly into the conversation and ask for it to be placed.',
                     ],
                 },
                 {
@@ -264,7 +264,7 @@ export default {
                 {
                     q: 'Can I monetize my website?',
                     a: [
-                        'Yes. Puter AI Builder does not process payments itself, so the usual approach is to link to a payment provider you already use, such as a checkout page or a payment link, and let the site handle everything around it. Ads, affiliate links, and lead forms work the same way they would on any website you own.',
+                        'Yes. Constructor does not process payments itself, so the usual approach is to link to a payment provider you already use, such as a checkout page or a payment link, and let the site handle everything around it. Ads, affiliate links, and lead forms work the same way they would on any website you own.',
                     ],
                 },
                 {
@@ -277,7 +277,7 @@ export default {
                     q: 'How is this different from Wix, Squarespace, or WordPress?',
                     a: [
                         'Those tools are editors: you work inside their canvas, their themes, and their plugin ecosystem, and your site stays there. That is a fair trade for many people, and it comes with a monthly bill and a ceiling.',
-                        'With Puter AI Builder you describe the site and get real website files. There is no theme to work around, no plugin marketplace to shop in, and no lock-in, because you can export the whole site and host it anywhere. The trade is that you are describing rather than dragging, which is faster once you get used to it and less familiar at first.',
+                        'With Constructor you describe the site and get real website files. There is no theme to work around, no plugin marketplace to shop in, and no lock-in, because you can export the whole site and host it anywhere. The trade is that you are describing rather than dragging, which is faster once you get used to it and less familiar at first.',
                     ],
                 },
             ],

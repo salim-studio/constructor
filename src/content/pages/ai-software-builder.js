@@ -17,13 +17,13 @@ export default {
         eyebrow: 'AI software builder',
         h1: 'AI software builder that turns a description into working business software',
         lead:
-            'Describe the internal tool, portal, or workflow your team needs and Puter AI Builder writes it, runs it, and fixes its own errors. Sign-in, a database, and hosting are already there.',
+            'Describe the internal tool, portal, or workflow your team needs and Constructor writes it, runs it, and fixes its own errors. Sign-in, a database, and hosting are already there.',
         cta: { label: 'Start building', href: '/' },
         secondary: { label: 'Browse use cases', href: '/use-cases/' },
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, nothing to install.',
         screenshot: {
             src: '/screenshots/software.webp',
-            alt: 'Build expense tracker software with Puter AI Builder',
+            alt: 'Build expense tracker software with Constructor',
         },
     },
 
@@ -51,7 +51,7 @@ export default {
                     icon: 'zap',
                     title: 'Shared data and automations',
                     body:
-                        'When a tool needs state everyone sees, a webhook, scheduled work, or a small API, Puter AI Builder deploys a serverless worker from the same conversation. Multi-user software without a server of your own.',
+                        'When a tool needs state everyone sees, a webhook, scheduled work, or a small API, Constructor deploys a serverless worker from the same conversation. Multi-user software without a server of your own.',
                 },
                 {
                     icon: 'shieldCheck',
@@ -127,7 +127,7 @@ export default {
                 {
                     title: 'Let it build and check itself',
                     body:
-                        'Puter AI Builder writes the screens, wires up storage and accounts, runs the result, and repairs any runtime error it finds. Longer builds show a plain-language checklist of what is done and what is left.',
+                        'Constructor writes the screens, wires up storage and accounts, runs the result, and repairs any runtime error it finds. Longer builds show a plain-language checklist of what is done and what is left.',
                 },
                 {
                     title: 'Refine by pointing or asking',
@@ -147,7 +147,7 @@ export default {
             id: 'starters',
             heading: 'Software teams actually ask for',
             intro:
-                'Pick one and Puter AI Builder makes it. Then describe how your business does it differently.',
+                'Pick one and Constructor makes it. Then describe how your business does it differently.',
             items: [
                 {
                     title: 'IT helpdesk',
@@ -220,7 +220,7 @@ export default {
                     q: 'What is an AI software builder?',
                     a: [
                         'An AI software builder takes a description of what a piece of software should do and produces the software itself: the screens, the data model, the logic, and the plumbing between them. Where an AI app builder tends to mean a single-purpose app, an AI software builder is expected to handle the things business software needs, such as sign-in for several people, records that persist, files, and workflows that move between users.',
-                        'Puter AI Builder does this in the browser. You describe the tool, it writes the files, runs them in a live preview, checks them for errors, and connects them to accounts, storage, and a database through Puter.js. You refine the result by asking for changes or clicking the part that should be different, then publish it to its own address.',
+                        'Constructor does this in the browser. You describe the tool, it writes the files, runs them in a live preview, checks them for errors, and connects them to accounts, storage, and a database through Puter.js. You refine the result by asking for changes or clicking the part that should be different, then publish it to its own address.',
                     ],
                 },
                 {
@@ -245,9 +245,9 @@ export default {
                     ],
                 },
                 {
-                    q: 'Is Puter AI Builder free?',
+                    q: 'Is Constructor free?',
                     a: [
-                        'Puter AI Builder is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going.',
+                        'Constructor is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going.',
                         'The people who use what you build bring their own Puter account for the storage and AI they consume, so their usage does not draw on yours.',
                     ],
                 },
@@ -261,7 +261,7 @@ export default {
                     q: 'How do several people use the same software with shared data?',
                     a: [
                         'Say so in the prompt. Sign-in comes from Puter accounts, so every user has their own identity with nothing for you to manage. Data that belongs to one person, like their settings or drafts, is stored under their account automatically.',
-                        'Data everyone should see, like a shared ticket queue or a schedule, goes in a serverless worker that Puter AI Builder deploys from the same conversation. Ask for roles, such as an admin who can create projects and clients who can only see their own, and it is written into the logic.',
+                        'Data everyone should see, like a shared ticket queue or a schedule, goes in a serverless worker that Constructor deploys from the same conversation. Ask for roles, such as an admin who can create projects and clients who can only see their own, and it is written into the logic.',
                     ],
                 },
                 {
@@ -294,7 +294,7 @@ export default {
                 {
                     q: 'Can it build desktop software or native mobile apps?',
                     a: [
-                        'No. Puter AI Builder produces web software only. It does not output a desktop installer or an iOS or Android binary, and it does not publish to app stores.',
+                        'No. Constructor produces web software only. It does not output a desktop installer or an iOS or Android binary, and it does not publish to app stores.',
                         'What you get instead is closer than it sounds: every project ships with a web manifest and icon set, so it installs to a phone home screen or a desktop and opens full screen like an installed app, with updates live for everyone the moment you publish.',
                     ],
                 },

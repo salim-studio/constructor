@@ -24,13 +24,13 @@ export default {
         eyebrow: 'Open source AI app builder',
         h1: 'Open source AI app builder',
         lead:
-            'Puter AI Builder is open source. Build online, self-host it, or fork the code to make it your own.',
+            'Constructor is open source. Build online, self-host it, or fork the code to make it your own.',
         cta: { label: 'Start building free', href: buildLink(starterPrompt) },
         secondary: { label: 'View on GitHub', href: LINKS.builderGithub },
         note: '[Apache 2.0 licensed](' + builderLicense + ').',
         screenshot: {
             src: '/screenshots/software.webp',
-            alt: 'Puter AI Builder with a working web app in the live preview',
+            alt: 'Constructor with a working web app in the live preview',
         },
     },
 
@@ -124,7 +124,7 @@ export default {
             heading: 'Open source AI app builder FAQ',
             items: [
                 {
-                    q: 'Is Puter AI Builder really open source?',
+                    q: 'Is Constructor really open source?',
                     a: ['Yes. The [builder repository](' + LINKS.builderGithub + ') is public and released under [Apache License 2.0](' + builderLicense + '). You can inspect the source, fork it, and contribute changes.'],
                 },
                 {

@@ -1,7 +1,7 @@
 {
-  "name": "builder",
+  "name": "constructor",
   "version": "1.0.0",
-  "description": "AI Builder For Creating Sites and Apps!",
+  "description": "Constructor — Build Apps and Websites With AI!",
   "scripts": {
     "dev": "vite",
     "prebuild": "npm test",
@@ -102,7 +102,7 @@
     "test:templates": "node scripts/test-templates.mjs"
   },
   "keywords": [],
-  "author": "Nariman Jelveh",
+  "author": "salim-slimani",
   "devDependencies": {
     "sharp": "^0.35.3",
     "vite": "^6.4.2"

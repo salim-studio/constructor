@@ -162,7 +162,7 @@ export default verticalPage({
         {
             q: 'What does it cost a small firm?',
             a: [
-                'Puter AI Builder is free to start. Your Puter account includes a free allowance for building and publishing, and when it runs out you can upgrade the account to continue. There is no per-seat license and no annual contract, which is a sentence rarely true of anything else on a law office\'s software list.',
+                'Constructor is free to start. Your Puter account includes a free allowance for building and publishing, and when it runs out you can upgrade the account to continue. There is no per-seat license and no annual contract, which is a sentence rarely true of anything else on a law office\'s software list.',
             ],
         },
         {

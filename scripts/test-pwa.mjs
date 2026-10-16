@@ -168,7 +168,8 @@ check('swVersion is a short hex string', /^[0-9a-f]{12}$/.test(swVersion('a')));
 
 // --- PWA runtime (js/pwa.js) invariants ------------------------------------
 const pwa = read('src/js/pwa.js');
-check('pwa.js registers /sw.js', /serviceWorker\.register\(\s*['"]\/sw\.js['"]/.test(pwa));
+check('pwa.js registers the worker from the site root or subpath',
+    /serviceWorker\.register\(\s*(['"]\/sw\.js['"]|swUrl)/.test(pwa));
 check('pwa.js tears the worker down in local dev', /getRegistrations\(\)/.test(pwa) && /unregister\(\)/.test(pwa));
 // The critical guard: the first-install claim also fires controllerchange, so a
 // reload must only happen for a user-ACCEPTED update — never on first load.

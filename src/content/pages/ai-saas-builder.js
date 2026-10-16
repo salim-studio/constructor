@@ -17,13 +17,13 @@ export default {
         eyebrow: 'AI SaaS builder',
         h1: 'AI SaaS builder that ships a product people can sign in to',
         lead:
-            'Build a SaaS with AI without writing a line of code. Puter AI Builder turns your idea into a working product with sign-in, per-user data, and hosting included, and your running costs don\'t grow with your users.',
+            'Build a SaaS with AI without writing a line of code. Constructor turns your idea into a working product with sign-in, per-user data, and hosting included, and your running costs don\'t grow with your users.',
         cta: { label: 'Start building', href: '/' },
         secondary: { label: 'See the use cases', href: '/use-cases/' },
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, including on a phone.',
         screenshot: {
             src: '/screenshots/saas.webp',
-            alt: 'Build an AI writing assistant SaaS with Puter AI Builder',
+            alt: 'Build an AI writing assistant SaaS with Constructor',
         },
     },
 
@@ -51,7 +51,7 @@ export default {
                     icon: 'zap',
                     title: 'Shared state and public APIs',
                     body:
-                        'When your product needs a team workspace, a webhook, or an API other software can call, Puter AI Builder deploys a serverless worker from the same conversation.',
+                        'When your product needs a team workspace, a webhook, or an API other software can call, Constructor deploys a serverless worker from the same conversation.',
                 },
                 {
                     icon: 'sparkles',
@@ -85,7 +85,7 @@ export default {
                     title: 'It checks its own work',
                     art: 'verify',
                     body: [
-                        'After every change Puter AI Builder runs the app in the preview and watches for errors. If something breaks, it reads the file, fixes the cause, and verifies again before handing it back to you.',
+                        'After every change Constructor runs the app in the preview and watches for errors. If something breaks, it reads the file, fixes the cause, and verifies again before handing it back to you.',
                         'Every change is also saved as a version. If a new feature makes the product worse, restore the previous version in a click and take a different run at it.',
                     ],
                 },
@@ -127,7 +127,7 @@ export default {
                 {
                     title: 'Watch it build',
                     body:
-                        'Puter AI Builder writes the app with sign-in and per-user storage wired in, runs it, and checks that it works. A first version is usually ready in a couple of minutes.',
+                        'Constructor writes the app with sign-in and per-user storage wired in, runs it, and checks that it works. A first version is usually ready in a couple of minutes.',
                 },
                 {
                     title: 'Refine it by talking, or by pointing',
@@ -147,7 +147,7 @@ export default {
             id: 'starters',
             heading: 'Not sure where to start? Try one of these',
             intro:
-                'Pick one and Puter AI Builder makes it for you. Then make it yours by describing what to change.',
+                'Pick one and Constructor makes it for you. Then make it yours by describing what to change.',
             items: [
                 {
                     title: 'Time tracking and invoicing',
@@ -194,7 +194,7 @@ export default {
             columns: 2,
             heading: 'The two questions every SaaS founder asks',
             intro:
-                'Can it keep each customer\'s data separate, and can it charge them? Here is exactly where Puter AI Builder stands on both.',
+                'Can it keep each customer\'s data separate, and can it charge them? Here is exactly where Constructor stands on both.',
             items: [
                 {
                     icon: 'users',
@@ -206,7 +206,7 @@ export default {
                     icon: 'receipt',
                     title: 'Billing',
                     body:
-                        'Puter AI Builder does not process payments or manage subscriptions itself. The usual approach is to link to a checkout page or payment link from a provider you already use, then gate paid features in the app around who has paid. What the product does cover is everything around the transaction: sign-in, per-user data, the free tier, and the features people are paying for.',
+                        'Constructor does not process payments or manage subscriptions itself. The usual approach is to link to a checkout page or payment link from a provider you already use, then gate paid features in the app around who has paid. What the product does cover is everything around the transaction: sign-in, per-user data, the free tier, and the features people are paying for.',
                 },
             ],
         },
@@ -220,20 +220,20 @@ export default {
                     q: 'What is an AI SaaS builder?',
                     a: [
                         'An AI SaaS builder turns a plain-language description into a working software product that other people can sign in to and use. You describe what the product does and who it is for, and the AI designs the screens, sets up sign-in and per-user data, writes the logic, and runs the result so you can try it right away.',
-                        'It is different from an AI website builder, which produces a marketing site with a pricing page and a signup form but no product behind them. A SaaS builder produces the product: accounts, data that belongs to each user, and the features they came for. With Puter AI Builder the backend that makes this possible is included, so there is nothing to connect or host yourself.',
+                        'It is different from an AI website builder, which produces a marketing site with a pricing page and a signup form but no product behind them. A SaaS builder produces the product: accounts, data that belongs to each user, and the features they came for. With Constructor the backend that makes this possible is included, so there is nothing to connect or host yourself.',
                     ],
                 },
                 {
                     q: 'Do I need coding experience to build a SaaS?',
                     a: [
-                        'No. Every step, from the first description to publishing, works in plain English, and you refine the product the same way, by asking for changes or clicking the element you want changed. Puter AI Builder runs the app after every change and fixes errors it finds before handing it back.',
+                        'No. Every step, from the first description to publishing, works in plain English, and you refine the product the same way, by asking for changes or clicking the element you want changed. Constructor runs the app after every change and fixes errors it finds before handing it back.',
                         'What helps more than coding is clarity about the product: who the user is, the one job it does, and what they see after signing in. Our [guide to writing a build prompt](/guides/how-to-write-a-build-prompt/) covers how to describe that well.',
                     ],
                 },
                 {
                     q: 'How do I create my own SaaS with it?',
                     a: [
-                        'Describe the product, watch Puter AI Builder build it with sign-in and per-user storage wired in, refine it by asking for changes or pointing at what should be different, then press Publish to get a public link. The four steps above walk through each one, and the starter prompts give you a complete description to begin from.',
+                        'Describe the product, watch Constructor build it with sign-in and per-user storage wired in, refine it by asking for changes or pointing at what should be different, then press Publish to get a public link. The four steps above walk through each one, and the starter prompts give you a complete description to begin from.',
                     ],
                 },
                 {
@@ -245,8 +245,8 @@ export default {
                 {
                     q: 'How much does it cost to build a SaaS?',
                     a: [
-                        'Puter AI Builder is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going.',
-                        'Open Puter AI Builder, describe a product, and use it in the preview right away. Nothing is public until you decide to publish.',
+                        'Constructor is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going.',
+                        'Open Constructor, describe a product, and use it in the preview right away. Nothing is public until you decide to publish.',
                     ],
                 },
                 {
@@ -259,7 +259,7 @@ export default {
                 {
                     q: 'Can I accept payments or subscriptions?',
                     a: [
-                        'Puter AI Builder does not process payments or manage subscriptions itself, and there is no built-in checkout. The usual approach is to link to a payment provider you already use, such as a checkout page or a payment link, and gate paid features in your app around who has paid.',
+                        'Constructor does not process payments or manage subscriptions itself, and there is no built-in checkout. The usual approach is to link to a payment provider you already use, such as a checkout page or a payment link, and gate paid features in your app around who has paid.',
                         'Everything around the transaction is covered by the product you build: sign-in, per-user data, the free tier, and the features people are paying for. If built-in recurring billing is the deciding factor for you, a platform that bundles it may be a better fit, and you can still export what you build here and use it anywhere.',
                     ],
                 },
@@ -267,7 +267,7 @@ export default {
                     q: 'Can I build a multi-tenant SaaS?',
                     a: [
                         'Yes, and isolation is the default rather than something you add. Each user\'s records and files are stored under their own [Puter](' + LINKS.puter + ') account, so one customer cannot reach another\'s data.',
-                        'When customers need to share data, such as a team workspace, an agency and its clients, or a public board, ask for it and Puter AI Builder deploys a serverless worker to hold the shared part. Everything else stays per user. The starter prompts above show both patterns.',
+                        'When customers need to share data, such as a team workspace, an agency and its clients, or a public board, ask for it and Constructor deploys a serverless worker to hold the shared part. Everything else stays per user. The starter prompts above show both patterns.',
                     ],
                 },
                 {
@@ -301,7 +301,7 @@ export default {
                 {
                     q: 'What happens when the AI gets something wrong?',
                     a: [
-                        'Most runtime errors are caught before you see them: Puter AI Builder reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
+                        'Most runtime errors are caught before you see them: Constructor reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
                         'For everything else, tell it what is wrong in one sentence, or click the offending element in the preview and describe the fix. If a change made things worse overall, version history lets you restore an earlier snapshot and take a different run at it.',
                     ],
                 },
@@ -314,7 +314,7 @@ export default {
                 {
                     q: 'Can I build a mobile app, or publish to the App Store and Google Play?',
                     a: [
-                        'Every product you build works on phones and on the web from the same link, and on a phone it can be added to the home screen with its own icon so it opens like a native app. Puter AI Builder does not produce native iOS or Android binaries, so it does not publish to the app stores. For most SaaS that is a feature: there is no review to wait for, no fees, and updates go live for everyone instantly.',
+                        'Every product you build works on phones and on the web from the same link, and on a phone it can be added to the home screen with its own icon so it opens like a native app. Constructor does not produce native iOS or Android binaries, so it does not publish to the app stores. For most SaaS that is a feature: there is no review to wait for, no fees, and updates go live for everyone instantly.',
                     ],
                 },
             ],

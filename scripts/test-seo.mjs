@@ -386,14 +386,15 @@ for (const page of PAGES) {
 }
 check('llms.txt uses no em or en dashes', !/[—–]/.test(renderLlmsTxt(PAGES)));
 
-// The public Apache-licensed repository is HeyPuter/builder. The old /build
-// destination is not the same repository; reject that exact path without
-// accidentally rejecting /builder as a substring.
+// The public Apache-licensed repository is salim-studio/constructor. Reject the
+// old upstream builder path so a stale link cannot slip back in unnoticed.
+// (Links to the Puter platform repository itself remain allowed: the app is
+// powered by Puter.js and documents that backend.)
 const allRendered = [...rendered.values()].join('\n') + renderLlmsTxt(PAGES);
-check('nothing links to the obsolete builder repository path',
-    !/github\.com\/HeyPuter\/build(?=[/?#"\s)]|$)/i.test(allRendered));
+check('nothing links to the obsolete upstream builder repository',
+    !/github\.com\/HeyPuter\/builder(?=[/?#"\s)]|$)/i.test(allRendered));
 check('the builder source link agrees with the licensed local repository',
-    LINKS.builderGithub === 'https://github.com/HeyPuter/builder' &&
+    LINKS.builderGithub === 'https://github.com/salim-studio/constructor' &&
     read('../LICENSE').includes('Apache License') &&
     read('../README.md').includes(LINKS.builderGithub));
 

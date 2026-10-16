@@ -48,7 +48,7 @@ export default {
                 {
                     title: 'The model interprets it',
                     body:
-                        'It infers the parts you left out. A checkout tracker implies a list of items, a list of people, a status per item, and a way to search. Some builders ask a short round of questions at this point. Puter AI Builder asks at most three, only about the product, and lets you skip them.',
+                        'It infers the parts you left out. A checkout tracker implies a list of items, a list of people, a status per item, and a way to search. Some builders ask a short round of questions at this point. Constructor asks at most three, only about the product, and lets you skip them.',
                 },
                 {
                     title: 'It generates the app',
@@ -102,7 +102,7 @@ export default {
             list: [
                 '**No-code builders** such as Bubble, Glide, Softr, and Knack give you a visual canvas and a set of components. You build the app by hand, which gives you control and takes hours or days. The app lives inside the vendor\'s platform and rarely exports. Several have added AI to generate a starting point, which makes them a hybrid.',
                 '**AI coding assistants** such as Cursor, GitHub Copilot, and Claude Code help a developer write code in an existing project. They assume you can read code, run a development environment, and deploy the result. They are more capable in the hands of a developer and not usable without one.',
-                '**AI app builders** such as Puter AI Builder, Lovable, Bolt, Replit, and Base44 generate a whole app from a description, run it, and host it. There is no canvas to learn and no development environment to set up. Many produce standard code you can export, which no-code builders generally do not.',
+                '**AI app builders** such as Constructor, Lovable, Bolt, Replit, and Base44 generate a whole app from a description, run it, and host it. There is no canvas to learn and no development environment to set up. Many produce standard code you can export, which no-code builders generally do not.',
             ],
             after: [
                 'The practical question for choosing among them is who will operate the tool. A developer gets more from an assistant. A team that wants fine manual control and does not mind the platform gets a no-code builder. Someone who wants an app they can use this afternoon, and who may want to hand the code to a developer later, gets an AI app builder. The [vibe coding](/vibe-coding/) page covers the related distinction between building by description and AI-assisted coding.',
@@ -116,7 +116,7 @@ export default {
             body: [
                 'Within AI app builders there is a split that matters more than the feature lists. Some are built to produce an impressive demo fast. Others are built to produce an app you can actually run. The first kind generates a front end and stops. The second kind includes data, accounts, and hosting, and gives you the code.',
                 'One question sorts them. If you stopped using the tool tomorrow, what would you still have? For a prototype-first builder the answer is a front end with no data behind it. For a production-first builder the answer is a working app and its files.',
-                'Puter AI Builder is production-first. The app has accounts, storage, file handling, and AI models available from the first version, is hosted when you publish, and can be downloaded as plain HTML, CSS, and JavaScript at any time.',
+                'Constructor is production-first. The app has accounts, storage, file handling, and AI models available from the first version, is hosted when you publish, and can be downloaded as plain HTML, CSS, and JavaScript at any time.',
             ],
         },
 
@@ -252,7 +252,7 @@ export default {
                 {
                     q: 'Can I build a SaaS product with an AI app builder?',
                     a: [
-                        'You can build the product. Sign-in, per-user data, and the features people pay for are ordinary requests in a production-first builder. Payments are usually handled by linking to a payment provider rather than inside the builder. The [AI SaaS builder page](/ai-saas-builder/) covers the specifics for Puter AI Builder, including the cost model, where each user covers their own storage and AI through their own account.',
+                        'You can build the product. Sign-in, per-user data, and the features people pay for are ordinary requests in a production-first builder. Payments are usually handled by linking to a payment provider rather than inside the builder. The [AI SaaS builder page](/ai-saas-builder/) covers the specifics for Constructor, including the cost model, where each user covers their own storage and AI through their own account.',
                     ],
                 },
                 {
@@ -264,7 +264,7 @@ export default {
                 {
                     q: 'Do I own the app I build?',
                     a: [
-                        'It depends on the tool, and it is the first thing to check. With Puter AI Builder the code, the design, and everything you publish are yours, and the whole project can be downloaded as a zip of standard files at any time. Some builders only export the front end, and some do not export at all.',
+                        'It depends on the tool, and it is the first thing to check. With Constructor the code, the design, and everything you publish are yours, and the whole project can be downloaded as a zip of standard files at any time. Some builders only export the front end, and some do not export at all.',
                     ],
                 },
                 {
@@ -276,7 +276,7 @@ export default {
                 {
                     q: 'Are AI app builders free?',
                     a: [
-                        'Many have a free tier with limits on generations or hosting, and paid plans that scale with usage. Puter AI Builder is free to start with a [Puter](' + LINKS.puter + ') account, with hosting included, and people who use your app cover their own storage and AI through their own account. [How that works](' + LINKS.userPays + ').',
+                        'Many have a free tier with limits on generations or hosting, and paid plans that scale with usage. Constructor is free to start with a [Puter](' + LINKS.puter + ') account, with hosting included, and people who use your app cover their own storage and AI through their own account. [How that works](' + LINKS.userPays + ').',
                     ],
                 },
                 {

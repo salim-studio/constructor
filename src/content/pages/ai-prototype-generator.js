@@ -17,13 +17,13 @@ export default {
         eyebrow: 'AI prototype generator',
         h1: 'AI prototype generator that gives you a working prototype',
         lead:
-            'Describe the product and Puter AI Builder generates an interactive prototype you can click through, type into, and share at a link. It is real code with a real backend, so the prototype that wins testing can become the product without a rebuild.',
+            'Describe the product and Constructor generates an interactive prototype you can click through, type into, and share at a link. It is real code with a real backend, so the prototype that wins testing can become the product without a rebuild.',
         cta: { label: 'Start building', href: '/' },
         secondary: { label: 'How to write a build prompt', href: '/guides/how-to-write-a-build-prompt/' },
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Runs in any modern browser, including on a phone.',
         screenshot: {
             src: '/screenshots/prototype.webp',
-            alt: 'Build a travel booking prototype with Puter AI Builder',
+            alt: 'Build a travel booking prototype with Constructor',
         },
     },
 
@@ -85,7 +85,7 @@ export default {
                     title: 'Testers never land on a broken screen',
                     art: 'verify',
                     body: [
-                        'After every change Puter AI Builder runs the prototype and watches for errors. If a screen breaks, it reads the file, fixes the cause, and checks again before handing it back.',
+                        'After every change Constructor runs the prototype and watches for errors. If a screen breaks, it reads the file, fixes the cause, and checks again before handing it back.',
                         'You spend a testing session watching people use the product, not apologizing for a button that does nothing.',
                     ],
                 },
@@ -127,7 +127,7 @@ export default {
                 {
                     title: 'Watch it build',
                     body:
-                        'Puter AI Builder writes the screens and the logic, runs the prototype, and checks that it works. A first version is usually ready in a couple of minutes, running in a live preview you can use right away.',
+                        'Constructor writes the screens and the logic, runs the prototype, and checks that it works. A first version is usually ready in a couple of minutes, running in a live preview you can use right away.',
                 },
                 {
                     title: 'Refine it by talking, or by pointing',
@@ -147,7 +147,7 @@ export default {
             id: 'starters',
             heading: 'Not sure where to start? Try one of these',
             intro:
-                'Pick one and Puter AI Builder generates it for you. Then make it yours by describing what to change.',
+                'Pick one and Constructor generates it for you. Then make it yours by describing what to change.',
             items: [
                 {
                     title: 'Onboarding flow',
@@ -194,7 +194,7 @@ export default {
             columns: 2,
             heading: 'Working prototype or clickable mockup?',
             intro:
-                'Most AI prototype generators produce design files: screens linked with hotspots, meant to be viewed and then handed to engineering. Puter AI Builder produces something different, and it is worth knowing which one you need.',
+                'Most AI prototype generators produce design files: screens linked with hotspots, meant to be viewed and then handed to engineering. Constructor produces something different, and it is worth knowing which one you need.',
             items: [
                 {
                     icon: 'zap',
@@ -220,7 +220,7 @@ export default {
                     q: 'What is an AI prototype generator?',
                     a: [
                         'An AI prototype generator turns a plain-language description of a product into a prototype you can interact with. You describe the screens and the flow, and the AI produces them in minutes instead of the days it takes to wireframe, design, and wire up a prototype by hand.',
-                        'Most tools in this category generate design mockups: static screens linked together so a click on one takes you to the next. Puter AI Builder generates a working web app instead. The screens are real, the buttons run real logic, the forms save real data, and the whole thing runs at a link anyone can open. You refine it by asking for changes or clicking the part you want changed.',
+                        'Most tools in this category generate design mockups: static screens linked together so a click on one takes you to the next. Constructor generates a working web app instead. The screens are real, the buttons run real logic, the forms save real data, and the whole thing runs at a link anyone can open. You refine it by asking for changes or clicking the part you want changed.',
                     ],
                 },
                 {
@@ -272,21 +272,21 @@ export default {
                 {
                     q: 'Can I start from a sketch, a screenshot, or an existing design?',
                     a: [
-                        'Yes, as reference. Attach screenshots, sketches, images, a logo, PDFs, or text files in the chat, or share a link to an existing site, and describe what to keep and what to change. Puter AI Builder uses them to shape the prototype.',
+                        'Yes, as reference. Attach screenshots, sketches, images, a logo, PDFs, or text files in the chat, or share a link to an existing site, and describe what to keep and what to change. Constructor uses them to shape the prototype.',
                         'There is no direct import of Figma or Sketch files, and no automatic sketch-to-design conversion. Attaching an image and saying "make it look like this" is the workflow.',
                     ],
                 },
                 {
                     q: 'Can I export the prototype to Figma?',
                     a: [
-                        'No. Puter AI Builder generates a working app, not design files, so there is no Figma export and no design layers to hand over. What you can export is the project itself: a zip of standard HTML, CSS, and JavaScript that runs anywhere.',
+                        'No. Constructor generates a working app, not design files, so there is no Figma export and no design layers to hand over. What you can export is the project itself: a zip of standard HTML, CSS, and JavaScript that runs anywhere.',
                         'If your team needs a design spec, the usual approach is to point the designer at the running prototype and let them work from that, rather than trying to move it back into a design tool.',
                     ],
                 },
                 {
                     q: 'What happens when the AI gets something wrong?',
                     a: [
-                        'Most runtime errors are caught before you see them: Puter AI Builder reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
+                        'Most runtime errors are caught before you see them: Constructor reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify.',
                         'For everything else, tell it what is wrong in one sentence, or click the offending element in the preview and describe the fix. If a change made the prototype worse overall, version history lets you restore an earlier snapshot and take a different run at it.',
                     ],
                 },
@@ -294,14 +294,14 @@ export default {
                     q: 'What happens when the prototype needs to become the real product?',
                     a: [
                         'Keep going in the same project. Because the prototype is real code running on a real backend, there is no rebuild step: add the features you skipped, tighten the design, and publish. Apps built this way run with accounts, storage, and hosting included.',
-                        'Two honest limits. Puter AI Builder does not process payments itself, so the usual approach is to link out to a payment provider you already use. And for anything handling money, health information, or other people\'s personal data, read what was built before you rely on it, and treat the AI as a fast first draft rather than a security review.',
+                        'Two honest limits. Constructor does not process payments itself, so the usual approach is to link out to a payment provider you already use. And for anything handling money, health information, or other people\'s personal data, read what was built before you rely on it, and treat the AI as a fast first draft rather than a security review.',
                     ],
                 },
                 {
                     q: 'Can I generate a mobile app prototype?',
                     a: [
                         'Yes. Ask for a phone-first layout and resize the preview to check it at any width. The published prototype works on any phone from the link, and it can be added to the home screen with its own icon so it opens like an installed app.',
-                        'It is a web app, not a native one. Puter AI Builder does not produce iOS or Android binaries or App Store listings, which for a prototype is usually the point: testers open a link, and updates reach everyone instantly.',
+                        'It is a web app, not a native one. Constructor does not produce iOS or Android binaries or App Store listings, which for a prototype is usually the point: testers open a link, and updates reach everyone instantly.',
                     ],
                 },
                 {

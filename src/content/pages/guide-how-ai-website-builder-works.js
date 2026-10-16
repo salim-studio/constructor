@@ -45,7 +45,7 @@ export default {
             ],
             list: [
                 '**Assembling components.** The AI arranges templates, sections, and design components, then fills them with copy and images based on your description. The available components and ways to extend them depend on the platform.',
-                '**Generating code.** The AI writes the page structure, styling, and behavior as code. Puter AI Builder produces HTML, CSS, and JavaScript files this way. Other tools may combine generated code with an existing component library.',
+                '**Generating code.** The AI writes the page structure, styling, and behavior as code. Constructor produces HTML, CSS, and JavaScript files this way. Other tools may combine generated code with an existing component library.',
             ],
             after: [
                 'Either approach can offer AI assistance alongside visual editing. You might ask for a new services section, then use direct controls to adjust its spacing. Check the editing options, hosting, and code export separately; one does not guarantee the others.',
@@ -82,7 +82,7 @@ export default {
                 {
                     title: 'It loads the site in a preview',
                     body:
-                        'The assembled pages or generated files load so you can see and use the site. In Puter AI Builder, the preview runs the generated HTML, CSS, and JavaScript. The builder also watches the running page for errors and sends any it finds back to the model to fix before showing you the result.',
+                        'The assembled pages or generated files load so you can see and use the site. In Constructor, the preview runs the generated HTML, CSS, and JavaScript. The builder also watches the running page for errors and sends any it finds back to the model to fix before showing you the result.',
                 },
                 {
                     title: 'You review and change things',
@@ -113,14 +113,14 @@ export default {
             id: 'control',
             heading: 'Refining the site with AI assistance and visual editing',
             body: [
-                'The first version is a draft. AI assistance is useful for adding a section, changing its content, or rearranging the page. Visual editing gives you direct control over individual details. In Puter AI Builder you refine a site in two ways.',
+                'The first version is a draft. AI assistance is useful for adding a section, changing its content, or rearranging the page. Visual editing gives you direct control over individual details. In Constructor you refine a site in two ways.',
             ],
             list: [
                 '**Describe the change.** "Move testimonials above pricing and make the quote button more prominent." Useful for structural changes or changes across several parts of the site. Review the result to make sure the AI applied the change where you intended.',
-                '**Point at the element.** Click the exact heading, card, or button in the preview and say what should be different. This removes the problem of describing where something is. In Puter AI Builder this is the [element picker](/features/).',
+                '**Point at the element.** Click the exact heading, card, or button in the preview and say what should be different. This removes the problem of describing where something is. In Constructor this is the [element picker](/features/).',
             ],
             after: [
-                'If the builder gives you access to the code, there is a third option: open the files and edit them. The output of Puter AI Builder is ordinary HTML, CSS, and JavaScript with no build step, so changing a phone number is a text edit, and a developer can take the project over at any point.',
+                'If the builder gives you access to the code, there is a third option: open the files and edit them. The output of Constructor is ordinary HTML, CSS, and JavaScript with no build step, so changing a phone number is a text edit, and a developer can take the project over at any point.',
             ],
         },
 
@@ -168,9 +168,9 @@ export default {
         {
             type: 'prose',
             id: 'puter',
-            heading: 'How Puter AI Builder does it',
+            heading: 'How Constructor does it',
             body: [
-                'Here is the concrete version of the steps above in Puter AI Builder. You describe the site, with attachments if you have them. If something is genuinely open, you get one round of up to three questions, which you can skip. The model writes the files, a checklist shows progress, and the preview loads the site as it takes shape.',
+                'Here is the concrete version of the steps above in Constructor. You describe the site, with attachments if you have them. If something is genuinely open, you get one round of up to three questions, which you can skip. The model writes the files, a checklist shows progress, and the preview loads the site as it takes shape.',
                 'After every change the preview is reloaded and watched for runtime errors. Anything that throws goes back to the model, which reads the file, fixes the cause, and checks again. You are told a change is done only once the page runs clean. What is not checked is whether the site says what you meant. That review is yours.',
                 'Publishing puts the site on its own address on puter.site in one click, and the project can be downloaded as a zip at any time. Two limits to know about. A custom domain means pointing your DNS at the published address or hosting the downloaded files yourself, and each project belongs to one account, so two people cannot edit the same project at once. The [full walkthrough](/guides/how-to-build-a-website-with-ai/) carries one example site from prompt to published address, and the [landing page](/ai-landing-page-builder/) and [portfolio](/ai-portfolio-builder/) pages show what a first version includes for those two kinds of site.',
             ],
@@ -190,7 +190,7 @@ export default {
                 {
                     q: 'Do AI website builders write code?',
                     a: [
-                        'Some generate code, some assemble existing components, and some combine both. Whether you can view, edit, or export the code is a separate question. Puter AI Builder writes HTML, CSS, and JavaScript files that you can download and host elsewhere.',
+                        'Some generate code, some assemble existing components, and some combine both. Whether you can view, edit, or export the code is a separate question. Constructor writes HTML, CSS, and JavaScript files that you can download and host elsewhere.',
                     ],
                 },
                 {
@@ -202,7 +202,7 @@ export default {
                 {
                     q: 'Can I edit the site after the AI builds it?',
                     a: [
-                        'Yes. The available controls depend on the tool: AI assistance, visual editing, and direct code editing can work together. In Puter AI Builder you can describe a change, or select an element in the preview and say what should be different about it. Every change is saved as a version, so an edit that makes things worse is one click to undo.',
+                        'Yes. The available controls depend on the tool: AI assistance, visual editing, and direct code editing can work together. In Constructor you can describe a change, or select an element in the preview and say what should be different about it. Every change is saved as a version, so an edit that makes things worse is one click to undo.',
                     ],
                 },
                 {
@@ -214,7 +214,7 @@ export default {
                 {
                     q: 'How much does an AI website builder cost?',
                     a: [
-                        'Pricing varies by platform. Check generation limits, hosting, and custom-domain costs separately. Puter AI Builder is free to start with a [Puter](' + LINKS.puter + ') account, with hosting included. People who use features of your site that consume storage or AI cover that through their own account. [How that works](' + LINKS.userPays + ').',
+                        'Pricing varies by platform. Check generation limits, hosting, and custom-domain costs separately. Constructor is free to start with a [Puter](' + LINKS.puter + ') account, with hosting included. People who use features of your site that consume storage or AI cover that through their own account. [How that works](' + LINKS.userPays + ').',
                     ],
                 },
                 {

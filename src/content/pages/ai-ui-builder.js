@@ -25,7 +25,7 @@ export default {
         note: 'Free to start with a [Puter](' + LINKS.puter + ') account. Build responsive web UI for desktop and mobile browsers.',
         screenshot: {
             src: '/screenshots/ui.webp',
-            alt: 'Build an analytics dashboard UI with Puter AI Builder',
+            alt: 'Build an analytics dashboard UI with Constructor',
         },
     },
 
@@ -41,7 +41,7 @@ export default {
                     icon: 'layout',
                     title: 'Designs the whole interface',
                     body:
-                        'Describe the screen and Puter AI Builder designs it: layout, hierarchy, navigation, forms, cards, tables, empty states, and sensible default content, written for you rather than adapted from a template.',
+                        'Describe the screen and Constructor designs it: layout, hierarchy, navigation, forms, cards, tables, empty states, and sensible default content, written for you rather than adapted from a template.',
                 },
                 {
                     icon: 'code',
@@ -87,7 +87,7 @@ export default {
                     title: 'It runs before you see it',
                     art: 'verify',
                     body: [
-                        'After every change the preview is reloaded and watched for runtime errors. If something breaks, Puter AI Builder reads the file, fixes the cause, and checks again before handing the interface back to you.',
+                        'After every change the preview is reloaded and watched for runtime errors. If something breaks, Constructor reads the file, fixes the cause, and checks again before handing the interface back to you.',
                         'Every turn is also saved as a version. If a redesign makes things worse, restore the previous one in a click and take a different run at it.',
                     ],
                 },
@@ -129,7 +129,7 @@ export default {
                 {
                     title: 'Watch it build',
                     body:
-                        'Puter AI Builder writes the HTML, CSS, and JavaScript, runs the interface in the live preview, and checks that it works. A first version is usually ready in a couple of minutes.',
+                        'Constructor writes the HTML, CSS, and JavaScript, runs the interface in the live preview, and checks that it works. A first version is usually ready in a couple of minutes.',
                 },
                 {
                     title: 'Check desktop and mobile layouts',
@@ -149,7 +149,7 @@ export default {
             id: 'starters',
             heading: 'Not sure where to start? Try one of these',
             intro:
-                'Pick one and Puter AI Builder makes it for you. Then make it yours by pointing at what to change.',
+                'Pick one and Constructor makes it for you. Then make it yours by pointing at what to change.',
             items: [
                 {
                     title: 'Analytics dashboard',
@@ -222,7 +222,7 @@ export default {
                     q: 'What is an AI UI builder?',
                     a: [
                         'An AI UI builder turns a plain-language description into a user interface: the layout, the components, the styling, and the states in between. You say what the screen is for and what it needs, and the AI designs it and builds it, usually in minutes.',
-                        'Puter AI Builder creates working web UI in HTML, CSS, and JavaScript, with responsive layouts for desktop and mobile browsers. You can click through the screens, refine individual elements, use Puter accounts and storage when needed, and publish the interface or download its files.',
+                        'Constructor creates working web UI in HTML, CSS, and JavaScript, with responsive layouts for desktop and mobile browsers. You can click through the screens, refine individual elements, use Puter accounts and storage when needed, and publish the interface or download its files.',
                     ],
                 },
                 {
@@ -235,7 +235,7 @@ export default {
                 {
                     q: 'Is the AI UI builder free?',
                     a: [
-                        'It is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. Open Puter AI Builder, describe an interface, and use it in the preview right away. Nothing is public until you decide to publish.',
+                        'It is free to start. Every [Puter](' + LINKS.puter + ') account comes with a free allowance for building and publishing, and when you use it up you can upgrade your account to keep going. Open Constructor, describe an interface, and use it in the preview right away. Nothing is public until you decide to publish.',
                     ],
                 },
                 {
@@ -275,7 +275,7 @@ export default {
                 {
                     q: 'Can I connect a backend?',
                     a: [
-                        'One is already connected. Every interface built here can use user accounts, a key-value database, file storage, and chat, vision, and image models through [Puter](' + LINKS.puter + '), with no API keys to manage and nothing to set up. When something has to run outside the browser, like shared state, a webhook, or a public API, Puter AI Builder can deploy a serverless worker from the same conversation.',
+                        'One is already connected. Every interface built here can use user accounts, a key-value database, file storage, and chat, vision, and image models through [Puter](' + LINKS.puter + '), with no API keys to manage and nothing to set up. When something has to run outside the browser, like shared state, a webhook, or a public API, Constructor can deploy a serverless worker from the same conversation.',
                         'If you want the interface to talk to a backend you already have, describe the API and it will be wired up like any other web page would be.',
                     ],
                 },
@@ -288,7 +288,7 @@ export default {
                 {
                     q: 'Can I export to Figma, or import a Figma design?',
                     a: [
-                        'Puter AI Builder creates editable web files. It does not export to Figma or import Figma files and design-system libraries.',
+                        'Constructor creates editable web files. It does not export to Figma or import Figma files and design-system libraries.',
                         'You can attach screenshots, a logo, and reference files to the chat, or share a link to an existing site, and describe the layout, styling, and mobile behavior you want to follow.',
                     ],
                 },
@@ -302,7 +302,7 @@ export default {
                 {
                     q: 'What happens when the AI gets the UI wrong?',
                     a: [
-                        'Runtime errors are mostly caught before you see them: Puter AI Builder reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify. A turn is not reported as done until the interface runs clean.',
+                        'Runtime errors are mostly caught before you see them: Constructor reloads the preview after each change, watches for errors, and sends them back to the AI to fix and re-verify. A turn is not reported as done until the interface runs clean.',
                         'For everything else, tell it what is wrong in one sentence, or click the offending element and describe the fix. If a change made things worse overall, version history lets you restore an earlier snapshot in a click and try a different direction.',
                     ],
                 },

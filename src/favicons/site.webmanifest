@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "AI Builder by Puter",
-  "short_name": "AI Builder",
-  "description": "Build apps, websites, and tools with AI — no code required. Describe what you want and Puter's AI builder creates it in your browser.",
+  "name": "Constructor",
+  "short_name": "Constructor",
+  "description": "Build apps, websites, and tools with AI — no code required. Describe what you want and Constructor creates it in your browser.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -45,14 +45,14 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Describe your idea and AI Builder creates the app or website — no code required"
+      "label": "Describe your idea and Constructor creates the app or website — no code required"
     },
     {
       "src": "/screenshots/desktop-dark.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "AI Builder in dark mode"
+      "label": "Constructor in dark mode"
     },
     {
       "src": "/screenshots/mobile-light.png",
@@ -66,7 +66,7 @@
       "sizes": "720x1280",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "AI Builder on mobile in dark mode"
+      "label": "Constructor on mobile in dark mode"
     }
   ]
 }

@@ -129,8 +129,8 @@ function renderSkeleton() {
         // above the fold below it.
         h += `<div class="home-hero">`;
         var __base = (typeof location !== 'undefined' && location.pathname && location.pathname.indexOf('/constructor') === 0) ? '/constructor' : '';
-        h += `<div class="chat-tagline"><a class="chat-tagline-logo" href="${__base}/"><img class="chat-tagline-icon" src="${__base}/favicons/app-icon.png" alt="Puter"></a><h1 class="chat-tagline-text">Build Apps and Websites With AI</h1></div>`;
-        h += `<div class="chat-tagline-sub">Describe your idea and Puter will build it for you, no code required!</div>`;
+        h += `<div class="chat-tagline"><a class="chat-tagline-logo" href="${__base}/"><img class="chat-tagline-icon" src="${__base}/favicons/app-icon.png" alt="Constructor"></a><h1 class="chat-tagline-text">Build Apps and Websites with Constructor</h1></div>`;
+        h += `<div class="chat-tagline-sub">Describe your idea and Constructor will build it for you, no code required!</div>`;
         h += `<div class="chat-input">`;
             // Icon-only controls carry an accessible name (aria-label / title): a
             // screen reader otherwise announces the composer as an unlabelled
@@ -176,7 +176,7 @@ function renderSkeleton() {
             const inApp = !!(window.puter && puter.env === 'app');
             if (inApp) {
                 const crossLinkLabel = 'Open on the web';
-                h += `<a class="open-web-btn" href="https://builder.puter.com" target="_blank" rel="noopener" title="${crossLinkLabel}">${external_link_svg}<span>${crossLinkLabel}</span></a>`;
+                h += `<a class="open-web-btn" href="https://salim-studio.github.io/constructor/" target="_blank" rel="noopener" title="${crossLinkLabel}">${external_link_svg}<span>${crossLinkLabel}</span></a>`;
             } else {
                 // Links to the static marketing/guide pages (src/content/). Hidden
                 // inside the Puter desktop: those pages are not where the user
@@ -202,7 +202,7 @@ function renderSkeleton() {
                     }
                 h += `</nav>`;
             }
-            h += `<span class="chat-copyright-text">&copy; 2026 Puter Technologies Inc.</span>`;
+            h += `<span class="chat-copyright-text">&copy; 2026 salim-slimani. All rights reserved.</span>`;
         h += `</div>`;
     h += `</main>`;
 
@@ -268,7 +268,7 @@ function updateUserMenu() {
     // host environment, so the account control is redundant — hide it there.
     const isApp = !!(window.puter && puter.env === 'app');
 
-    const githubLink = `<a class="github-link" href="https://github.com/HeyPuter/builder" target="_blank" rel="noopener noreferrer" title="View source on GitHub" aria-label="View source on GitHub (opens in a new tab)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.42-1.305.763-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.5 11.5 0 0 1 12 6.3c1.02.005 2.045.138 3.005.405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.295 24 17.795 24 12.5c0-6.63-5.37-12-12-12Z"/></svg></a>`;
+    const githubLink = `<a class="github-link" href="https://github.com/salim-studio/constructor" target="_blank" rel="noopener noreferrer" title="View source on GitHub" aria-label="View source on GitHub (opens in a new tab)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.42-1.305.763-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.5 11.5 0 0 1 12 6.3c1.02.005 2.045.138 3.005.405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.295 24 17.795 24 12.5c0-6.63-5.37-12-12-12Z"/></svg></a>`;
     // Signed-in users get the plan button (see openUpgradeModal): Upgrade on
     // the free plan, Benefits on a paid one.
     const paidPlan = !!window.Branding?.isSubscribed(window.user);

@@ -1,4 +1,4 @@
-/* AI Builder service worker.
+/* Constructor service worker.
  *
  * Strategy (this is an online AI tool, so the goal is a fast, installable,
  * gracefully-offline SHELL — not offline AI):

@@ -162,7 +162,7 @@ export default verticalPage({
         {
             q: 'What does it cost against yet another practice subscription?',
             a: [
-                'Puter AI Builder is free to start. Each Puter account includes a free allowance for building and publishing, and you can upgrade the account when it runs out. There is no per-seat fee and no tax-season surge pricing, and clients who sign in cover their own usage through their own account. The economics matter because these are exactly the tools that never justify a $70-per-month line item, which is why they stay spreadsheets.',
+                'Constructor is free to start. Each Puter account includes a free allowance for building and publishing, and you can upgrade the account when it runs out. There is no per-seat fee and no tax-season surge pricing, and clients who sign in cover their own usage through their own account. The economics matter because these are exactly the tools that never justify a $70-per-month line item, which is why they stay spreadsheets.',
             ],
         },
     ],
