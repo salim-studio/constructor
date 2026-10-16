@@ -613,7 +613,11 @@ function withoutPreviewBust(u) {
 function reloadPreviewFrame(url, opts) {
     const $frame = $('.preview-frame');
     if (!$frame.length) return;
-    const target = url || $frame.data('preview-url');
+    // An explicit URL is a direct navigation (draft preview, restore, …) and
+    // leaves the transient published view. With no URL, reload whichever copy
+    // is currently shown — the published site when it is being viewed.
+    if (url) _publishedViewUrl = null;
+    const target = url || _publishedViewUrl || $frame.data('preview-url');
     if (!target) return;
     // The toolbar's Reload while "Applying changes…" is mid-flight
     // (keepPendingUpdate): reload the frame now, but leave that update alive.
@@ -952,6 +956,8 @@ async function refreshPreviewWhenReady() {
     const $frame = $('.preview-frame');
     const baseUrl = window.currentPreviewUrl;
     if (!$frame.length || !baseUrl) return;
+    // Fresh draft content is on its way — leave any transient published view.
+    _publishedViewUrl = null;
     // The project this refresh belongs to. Read once, here: the wait below is
     // ten seconds or more, and a load of another chat can reassign the global
     // before it ends (loadChat only tears the pane down when the target has no
@@ -1200,6 +1206,9 @@ window.showAppPreview = function(url, opts) {
         });
     }
     window.currentPreviewUrl = url;
+    // The draft preview is the live working copy again — drop any transient
+    // published-site view.
+    _publishedViewUrl = null;
     $('body').addClass('preview-active');
     // On mobile, default to showing the freshly-previewed app (not the chat).
     $('body').removeClass('mobile-view-chat');
@@ -1226,6 +1235,52 @@ window.showAppPreview = function(url, opts) {
     previewRefreshPending = false;
 };
 
+// ---- Published-site in-app view -------------------------------------------
+// The public release opens INSIDE the app: "Open site" / "Visit site" loads
+// the published URL into the embedded preview pane instead of a new tab.
+//
+// Draft tracking is deliberately left untouched (window.currentPreviewUrl
+// keeps pointing at the draft site). The published copy is frozen at publish
+// time, so any new draft activity — a manual reload with an explicit URL, a
+// background refresh, showing the draft preview, hiding the pane — drops this
+// view and returns to the draft. A plain Reload with no URL simply reloads
+// whichever copy is currently shown.
+let _publishedViewUrl = null;
+window.viewPublishedInApp = function(url) {
+    if (!url) return;
+    if (!$('.preview-pane').length) {
+        // No preview pane yet (e.g. published from settings without ever
+        // previewing). Bootstrap it from the draft when there is one; without
+        // any draft there is nothing to embed into, so fall back to a tab.
+        if (window.currentPreviewUrl && typeof window.showAppPreview === 'function') {
+            window.showAppPreview(window.currentPreviewUrl);
+        } else {
+            window.open(url, '_blank', 'noopener,noreferrer');
+            return;
+        }
+    }
+    const $f = $('.preview-frame');
+    if (!$f.length) {
+        window.open(url, '_blank', 'noopener,noreferrer');
+        return;
+    }
+    _publishedViewUrl = String(url);
+    $('body').addClass('preview-active');
+    // On mobile, show the site (not the chat), mirroring showAppPreview.
+    $('body').removeClass('mobile-view-chat');
+    if (typeof window.syncViewSeg === 'function') {
+        try { window.syncViewSeg(); } catch (e) { /* best effort */ }
+    }
+    const fresh = bustedUrl(withoutPreviewBust(_publishedViewUrl));
+    $f.data('preview-url', fresh);
+    // A new document: its errors are new, even if they read the same.
+    if (typeof window.resetPreviewErrorDedup === 'function') {
+        try { window.resetPreviewErrorDedup(); } catch (e) { /* best effort */ }
+    }
+    $f.attr('src', 'about:blank');
+    setTimeout(function() { $f.attr('src', fresh); }, 30);
+};
+
 /** Hide the preview pane and restore the centered chat layout. */
 window.hideAppPreview = function() {
     // Supersede any in-flight propagation probe so it can't reload/clobber later.
@@ -1244,6 +1299,7 @@ window.hideAppPreview = function() {
     $('.preview-frame').attr('src', 'about:blank');
     window.currentPreviewUrl = null;
     window.currentPreviewPath = null;
+    _publishedViewUrl = null;
     // The published-site globals describe the project being torn down — clear
     // them so the next chat can't briefly inherit this one's published URL, and
     // reset the toolbar Publish button to its empty state.
@@ -1983,7 +2039,7 @@ function renderPublishPanel() {
             '<div class="publish-url-row">' +
                 `<a class="publish-url-display" href="${safeUrl}" target="_blank" rel="noopener noreferrer" title="${safeUrl}">${host}</a>` +
                 `<button class="publish-icon-btn publish-copy" title="Copy link">${copySvg}</button>` +
-                `<a class="publish-icon-btn publish-open" href="${safeUrl}" target="_blank" rel="noopener noreferrer" title="Open site in new tab">${window.external_link_svg}</a>` +
+                `<a class="publish-icon-btn publish-open" href="${safeUrl}" target="_blank" rel="noopener noreferrer" title="View site in preview">${window.external_link_svg}</a>` +
             '</div>' +
             '<button class="publish-change-address" data-action="change-address">Change address</button>' +
             '<div class="publish-address-edit">' +
@@ -2544,8 +2600,11 @@ async function doPublish() {
             const publishToastOptions = {
                 type: 'success',
                 action: {
-                    label: 'Open site',
-                    onClick: () => window.open(url, '_blank', 'noopener,noreferrer'),
+                    label: 'View site',
+                    onClick: () => {
+                        if (typeof window.viewPublishedInApp === 'function') window.viewPublishedInApp(url);
+                        else window.open(url, '_blank', 'noopener,noreferrer');
+                    },
                 },
             };
             // Swap the popover to its share view, waiting briefly for the site
@@ -2883,7 +2942,7 @@ function publishSuccessHtml({ url, meta }) {
             '<div class="publish-site-card-main">' +
                 '<div class="publish-site-card-head">' +
                     iconHtml +
-                    `<a class="publish-site-card-title" href="${safeUrl}" target="_blank" rel="noopener noreferrer">${htmlEscape(title)}</a>` +
+                    `<a class="publish-site-card-title" href="${safeUrl}" title="View site in preview">${htmlEscape(title)}</a>` +
                 '</div>' +
                 `<div class="publish-site-card-host">${htmlEscape(host)}</div>` +
                 (meta.description ? `<p class="publish-site-card-desc">${htmlEscape(meta.description)}</p>` : '') +
@@ -2892,7 +2951,7 @@ function publishSuccessHtml({ url, meta }) {
         '</div>' +
         '<div class="publish-result-actions">' +
             `<button type="button" class="publish-result-copy">${copySvg}<span>Copy link</span></button>` +
-            `<a class="publish-result-visit" href="${safeUrl}" target="_blank" rel="noopener noreferrer"><span>Visit site</span>${arrowSvg}</a>` +
+            `<a class="publish-result-visit" href="${safeUrl}" title="View site in preview"><span>View site</span>${arrowSvg}</a>` +
         '</div>' +
         publishBrandingHtml() +
     '</div>';
@@ -2901,6 +2960,14 @@ function publishSuccessHtml({ url, meta }) {
 // Handlers for the share view, bound directly on the fresh nodes after each
 // render (delegation isn't needed — the panel already owns its click scope).
 function bindPublishSuccessHandlers($panel, { url, meta }) {
+    // The site title and "View site" open the published site INSIDE the app
+    // (embedded preview) instead of a new tab.
+    $panel.find('.publish-site-card-title, .publish-result-visit').on('click', function (e) {
+        if (typeof window.viewPublishedInApp === 'function') {
+            e.preventDefault();
+            window.viewPublishedInApp(url);
+        }
+    });
     // A favicon that doesn't load (404, CDN still propagating) falls back to
     // the letter placeholder instead of a broken-image glyph.
     $panel.find('img.publish-site-card-icon').on('error', function () {
@@ -2951,6 +3018,17 @@ $(document).on('click', '.publish-change-address', function () {
     $panel.addClass('editing-address');
     $input.trigger('focus');
     $input[0].select();
+});
+// The published-site links open INSIDE the app: the URL display, the open
+// icon, and the success view's title / "View site" all load the public URL
+// into the embedded preview pane instead of a new tab. (Share icons for
+// external networks intentionally keep opening new tabs.)
+$(document).on('click', '.preview-publish-panel .publish-url-display, .preview-publish-panel .publish-open', function (e) {
+    const href = $(this).attr('href');
+    if (href && typeof window.viewPublishedInApp === 'function') {
+        e.preventDefault();
+        window.viewPublishedInApp(href);
+    }
 });
 // Leave the address editor. Hiding it took the focus in its field or on its
 // buttons down with it — to <body>, out of the open popover — so focus moves to
@@ -4462,9 +4540,17 @@ async function showChatProperties(chatId) {
         const hadFocus = $published[0].contains(document.activeElement);
         $published.empty().removeClass('is-editing');
         if (pub.url) {
-            $('<a class="properties-published-link" target="_blank" rel="noopener"></a>')
+            $('<a class="properties-published-link" title="View site in preview"></a>')
                 .attr('href', pub.url)
                 .text(pub.url.replace(/^https?:\/\//, '').replace(/\/+$/, ''))
+                .on('click', function (e) {
+                    if (typeof window.viewPublishedInApp === 'function') {
+                        e.preventDefault();
+                        window.viewPublishedInApp(pub.url);
+                    } else {
+                        $(this).attr('target', '_blank').attr('rel', 'noopener');
+                    }
+                })
                 .appendTo($published);
             $('<button type="button" class="properties-site-btn properties-rename-site">Rename</button>')
                 .appendTo($published);
