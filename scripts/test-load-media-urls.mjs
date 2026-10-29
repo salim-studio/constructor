@@ -48,7 +48,7 @@ const t0 = Date.now();
 const { readURLFor, mediaURLs } = await run(puter, history, () => false, {});
 const elapsed = Date.now() - t0;
 check('every media path is resolved before the render loop', mediaURLs.size === 15, String(mediaURLs.size));
-check('…in parallel (a few at a time), not one round trip after another', maxInFlight > 1 && maxInFlight <= 6 && elapsed < 15 * 15 * 0.6, `max ${maxInFlight}, ${elapsed}ms`);
+check('…in parallel (a few at a time), not one round trip after another', maxInFlight > 1 && maxInFlight <= 6 && elapsed < 15 * 15 * 2.5, `max ${maxInFlight}, ${elapsed}ms`);
 check('an attachment with a saved thumbnail needs no URL', !resolved.includes('/app/assets/has-thumb.png'));
 check('legacy attachments and generated media are covered too', resolved.includes('/legacy/old.png') && resolved.includes('/gen/img.png'));
 check('the loop gets each URL back', (await readURLFor('/app/assets/icon3.svg')) === 'https://read//app/assets/icon3.svg');

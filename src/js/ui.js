@@ -269,12 +269,13 @@ function updateUserMenu() {
     const isApp = !!(window.puter && puter.env === 'app');
 
     const githubLink = `<a class="github-link" href="https://github.com/salim-studio/constructor" target="_blank" rel="noopener noreferrer" title="View source on GitHub" aria-label="View source on GitHub (opens in a new tab)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.42-1.305.763-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.5 11.5 0 0 1 12 6.3c1.02.005 2.045.138 3.005.405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.295 24 17.795 24 12.5c0-6.63-5.37-12-12-12Z"/></svg></a>`;
+    const salimAiBtn = `<button class="salim-ai-btn" id="open-salim-ai-settings" title="Salim Slimani AI Settings" aria-label="Salim Slimani AI Settings" style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;margin-right:8px;"><span style="font-size:14px;">✨</span><span>Salim Slimani AI</span></button>`;
     // Signed-in users get the plan button (see openUpgradeModal): Upgrade on
     // the free plan, Benefits on a paid one.
     const paidPlan = !!window.Branding?.isSubscribed(window.user);
     const upgradeBtn = loggedIn
         ? `<button class="upgrade-btn${paidPlan ? ' is-paid' : ''}" aria-haspopup="dialog">${paidPlan ? 'Benefits' : 'Upgrade'}</button>` : '';
-    let h = upgradeBtn;
+    let h = salimAiBtn + upgradeBtn;
     if (loggedIn && !isApp) {
         h += githubLink;
         // Signed in: a single avatar button opens the account panel — the
@@ -5068,6 +5069,11 @@ $(document).on('click', '.upgrade-btn', function (e) {
     e.stopPropagation();
     openUpgradeModal('toolbar');
 });
+$(document).on('click', '#open-salim-ai-settings, .user-panel-salim-ai', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.SalimAI?.openSettingsModal?.();
+});
 // The card the OfferUpgrade tool puts in the chat (tools/chat_ui/upgrade.js).
 $(document).on('click', '.upgrade-card-btn', function (e) {
     e.preventDefault();
@@ -5196,10 +5202,14 @@ function openUserPanel() {
                 '<span class="user-panel-avatar" aria-hidden="true"></span>' +
                 '<div class="user-panel-id">' +
                     '<span class="user-panel-name"></span>' +
-                    '<span class="user-panel-sub">Signed in to Puter</span>' +
+                    '<span class="user-panel-sub">Constructor by Salim Slimani</span>' +
                 '</div>' +
             '</div>' +
             '<div class="user-panel-body">' +
+                '<button class="user-panel-item user-panel-salim-ai">' +
+                    '<span class="user-item-icon" style="color:#60a5fa;">✨</span>' +
+                    '<span class="user-item-label">Salim Slimani AI Engine</span>' +
+                '</button>' +
                 '<div class="user-panel-theme">' +
                     '<span class="user-theme-label" id="user-theme-label">Theme</span>' +
                     `<div class="user-theme-seg" role="radiogroup" aria-labelledby="user-theme-label">${THEME_CHOICES.map(seg).join('')}</div>` +

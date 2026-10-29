@@ -36,6 +36,8 @@ let OUT_DIR = path.resolve(__dirname, 'dist');
 // import/export), so the bundle MUST keep that order and stay a classic,
 // non-module script — see classicBundle() below.
 const SCRIPTS = [
+  'js/salim-fs.js',
+  'js/salim-ai.js',
   'js/helpers.js',
   // Shared with the marketing pages (inlined there by seoPagesPlugin): the
   // composer handoff store both sides read and write.

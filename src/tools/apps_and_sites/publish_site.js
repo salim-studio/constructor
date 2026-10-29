@@ -51,8 +51,13 @@ ABSOLUTELY VERY IMPORTANT: you only need to call this ONCE per app. The preview 
             } catch (e) { /* gone or unusable: mint a new draft below */ }
         }
         if (!url) {
-            const site = await puter.hosting.create(window.makeDraftSubdomain(), path);
-            url = `https://${site.subdomain}.puter.site/`;
+            try {
+                const site = await puter.hosting.create(window.makeDraftSubdomain(), path);
+                url = `https://${site.subdomain}.puter.site/`;
+            } catch (e) {
+                console.warn('[publish_site] Puter hosting fallback to local preview', e);
+                url = (await window.createLocalPreviewUrl?.(path)) || `about:blank`;
+            }
         }
         // The hosting.create above is awaited, so the user may have navigated to
         // another project while it was in flight. If this turn is no longer the

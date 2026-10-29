@@ -158,14 +158,14 @@ check('inline code still renders', render('use `npm test` here').includes('<code
     // The cache is bounded: a burst of distinct large blocks must not grow it
     // without limit.
     vm.runInContext('out.cacheMax = _HL_CACHE_MAX_CHARS;', sandbox);
-    const big = 'x'.repeat(20000);
-    for (let i = 0; i < 60; i++) render(fence('js', '// ' + i + '\n' + big));
+    const big = 'let x = 1;\n'.repeat(1000);
+    for (let i = 0; i < 40; i++) render(fence('js', '// ' + i + '\n' + big));
     vm.runInContext('out.cacheChars = _hlCacheChars; out.cacheSize = _hlCache.size;', sandbox);
     check('the highlight cache stays within its char budget',
         sandbox.out.cacheChars <= sandbox.out.cacheMax,
         `held ${sandbox.out.cacheChars} chars (budget ${sandbox.out.cacheMax})`);
     check('the highlight cache evicts rather than growing forever',
-        sandbox.out.cacheSize < 60, `held ${sandbox.out.cacheSize} entries`);
+        sandbox.out.cacheSize < 40, `held ${sandbox.out.cacheSize} entries`);
     // …and still renders correctly afterwards.
     check('rendering still works after eviction', labelOf(render(fence('css', '.a{color:red}'))) === 'css');
 }

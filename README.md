@@ -18,7 +18,7 @@
 
 Describe what you want in plain language and Constructor turns it into a working website or application — no code required. An open-source AI app builder: chat with the assistant, watch a live preview take shape, edit visually, and publish to a real URL.
 
-Constructor runs entirely in the browser and is powered by [Puter.js](https://developer.puter.com/) for everything your projects need: authentication, storage, databases, serverless functions, hosting, and realtime capabilities — all seamlessly integrated without additional setup.
+Constructor runs entirely in the browser and is powered by **Salim Slimani AI** — an internal, flexible AI engine and virtual filesystem that allows building apps and websites directly in your browser without cloud balance limits or third-party paid subscriptions.
 
 <br>
 
